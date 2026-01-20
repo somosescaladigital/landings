@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#8B0000"/>
+  <circle cx="100" cy="100" r="85" fill="#660000"/>
+  
+  <!-- Key Shape -->
+  <g transform="translate(100, 100)">
+    <!-- Key Head (Circle) -->
+    <circle cx="0" cy="-20" r="25" fill="#C0C0C0" stroke="#FFD700" stroke-width="3"/>
+    <circle cx="0" cy="-20" r="15" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="0" cy="-20" r="8" fill="#FFD700"/>
+    
+    <!-- Key Shaft -->
+    <rect x="-5" y="5" width="10" height="40" fill="#C0C0C0" stroke="#FFD700" stroke-width="2"/>
+    
+    <!-- Key Teeth -->
+    <rect x="5" y="30" width="8" height="5" fill="#C0C0C0"/>
+    <rect x="5" y="38" width="8" height="5" fill="#C0C0C0"/>
+    <rect x="5" y="45" width="8" height="3" fill="#C0C0C0"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFD700" text-anchor="middle">DAKOTA</text>
+</svg>
