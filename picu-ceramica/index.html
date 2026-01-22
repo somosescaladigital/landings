@@ -26,7 +26,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="https://wa.me/your-number" class="btn btn-primary">Reservar Clase</a>
+                <a href="https://wa.me/5493425570152" target="_blank" class="btn btn-primary">Reservar Clase</a>
             </div>
         </nav>
     </header>
@@ -142,12 +142,33 @@
                                 style="background-image: url('img/WhatsApp Image 2026-01-21 at 9.36.40 PM.jpeg');">
                             </div>
                         </li>
+                        <li class="carousel-slide">
+                            <div class="item-inner"
+                                style="background-image: url('img/WhatsApp Image 2026-01-21 at 9.36.41 PM.jpeg');">
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="item-inner"
+                                style="background-image: url('img/WhatsApp Image 2026-01-21 at 9.36.42 PM.jpeg');">
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="item-inner"
+                                style="background-image: url('img/WhatsApp Image 2026-01-21 at 9.36.43 PM.jpeg');">
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <button class="carousel-btn next" id="nextBtn">❯</button>
             </div>
         </div>
     </section>
+
+    <!-- Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
@@ -181,38 +202,74 @@
         <div class="container contact-grid">
             <div class="contact-info">
                 <h2 class="section-title" style="text-align: left;">Vení a conocernos</h2>
+                <p class="contact-intro">Estamos en el corazón de Santa Fe. Acercate a conocer el taller o escribinos
+                    para despejar tus dudas.</p>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <strong>📍 Ubicación:</strong>
-                        <p>J.P. López y San Jerónimo, Santa Fe</p>
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Dirección:</strong>
+                            <p>J.P. López y San Jerónimo, Santa Fe</p>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <strong>📱 WhatsApp:</strong>
-                        <p>+54 342 123 4567</p>
+                    <div class="contact-btns">
+                        <a href="https://wa.me/5493425570152?text=Hola!+Quiero+reservar+una+clase" target="_blank"
+                            class="btn btn-whatsapp">
+                            <span>Reservar Clase</span>
+                        </a>
+                        <a href="https://wa.me/5493425570152?text=Hola!+Quiero+consultar+por+un+producto"
+                            target="_blank" class="btn btn-outline-whatsapp">
+                            <span>Consultar Productos</span>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="contact-map">
-                <!-- Simple Map Placeholder or Link -->
-                <div class="map-placeholder">
-                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Ver en Google Maps</a>
-                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.198332427909!2d-60.696606!3d-31.6079325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b507230f08304d%3A0x703c962d1162d7be!2sPicu!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                    width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <h3>PICU</h3>
-                <p>Cerámica Artesanal</p>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h3>PICU</h3>
+                    <p>ARTESANAL</p>
+                </div>
+                <p class="footer-desc">Un taller de Santa Fe donde el barro cobra vida. Clases de creación libre y
+                    piezas únicas hechas con el corazón.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Talleres</a></li>
+                    <li><a href="#galeria">Catálogo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>📍 J.P. López 2153, Santa Fe</p>
+                <p>📱 +54 9 342 557-0152</p>
+
             </div>
             <div class="footer-social">
-                <a href="https://instagram.com/picuceramica">Instagram</a>
-                <a href="#">Facebook</a>
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/picuceramica" target="_blank" aria-label="Instagram">Instagram</a>
+
+                    <a href="https://wa.me/5493425570152" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+                </div>
             </div>
-            <p class="copyright">&copy; 2026 PICU Cerámica. Todos los derechos reservados.</p>
+        </div>
+        <div class="container copyright-bar">
+            <p>&copy; 2026 PICU Cerámica. Arte en Barro y Corazón.</p>
         </div>
     </footer>
 

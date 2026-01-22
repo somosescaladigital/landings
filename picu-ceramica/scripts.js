@@ -21,7 +21,10 @@ document.querySelectorAll('section').forEach(section => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetHost = this.getAttribute('href');
+        if (targetHost === '#') return;
+        
+        const target = document.querySelector(targetHost);
         if (target) {
             window.scrollTo({
                 top: target.offsetTop - 80,
@@ -40,9 +43,10 @@ if (track) {
     let currentPosition = 0;
 
     const moveCarousel = (direction) => {
-        const slideWidth = track.querySelector('.carousel-slide').offsetWidth + 20; // width + gap
+        const slides = track.querySelectorAll('.carousel-slide');
+        const slideWidth = slides[0].offsetWidth + 20; // width + gap
         const visibleWidth = track.parentElement.offsetWidth;
-        const totalSlides = track.children.length;
+        const totalSlides = slides.length;
         const maxScroll = Math.max(0, (totalSlides * slideWidth) - visibleWidth - 20);
 
         if (direction === 'next') {
@@ -58,5 +62,43 @@ if (track) {
 
     nextBtn.addEventListener('click', () => moveCarousel('next'));
     prevBtn.addEventListener('click', () => moveCarousel('prev'));
+    
+    // Auto-adjust on resize
+    window.addEventListener('resize', () => {
+        currentPosition = 0;
+        track.style.transform = `translateX(0px)`;
+    });
 }
 
+// Modal Logic
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const closeBtn = document.querySelector('.modal-close');
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+
+carouselSlides.forEach(slide => {
+    slide.addEventListener('click', function() {
+        const bgImg = this.querySelector('.item-inner').style.backgroundImage;
+        const imgSrc = bgImg.replace('url("', '').replace('")', '').replace("url('", "").replace("')", "");
+        
+        modal.classList.add('active');
+        modalImg.src = imgSrc;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+    }
+});
+
+// Close modal on ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        modal.classList.remove('active');
+    }
+});
