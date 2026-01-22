@@ -181,6 +181,32 @@ header nav {
     color: var(--primary-color);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -698,9 +724,31 @@ footer {
         justify-content: center;
     }
 
-    .nav-links,
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-cream);
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
     .nav-cta {
         display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     .services-grid,
@@ -720,6 +768,16 @@ footer {
 @media (max-width: 600px) {
     .section-title {
         font-size: 2.5rem;
+        text-align: center !important;
+    }
+
+    .section-title::after {
+        margin: 15px auto 0 !important;
+    }
+
+    .about-content h2,
+    .contact-info h2 {
+        text-align: center !important;
     }
 
     .footer-grid {
@@ -755,4 +813,43 @@ footer {
 .fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.hero-btns .btn i {
+    margin-right: 8px;
+}
+
+/* Floating Instagram Button */
+.floating-ig {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1500;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.floating-ig:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .floating-ig {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
 }

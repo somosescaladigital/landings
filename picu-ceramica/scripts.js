@@ -17,6 +17,17 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinksContainer = document.querySelector('.nav-links');
+
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navLinksContainer.classList.toggle('active');
+    });
+}
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -26,6 +37,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const target = document.querySelector(targetHost);
         if (target) {
+            // Close mobile menu if open
+            if (mobileMenu && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                navLinksContainer.classList.remove('active');
+            }
+
             window.scrollTo({
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
