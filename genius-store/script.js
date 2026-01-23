@@ -109,7 +109,7 @@ window.openProductModal = (id) => {
     
     // WhatsApp prefilled message
     const message = `¡Hola Genius Store! 👋 Vi este producto en su web y me interesa: ${product.name} (${product.price})`;
-    const waUrl = `https://wa.me/5491100000000?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/5491131563172/?text=${encodeURIComponent(message)}`;
     document.getElementById('waOrderBtn').href = waUrl;
 
     modal.classList.add('active');
