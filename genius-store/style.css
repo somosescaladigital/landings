@@ -58,6 +58,7 @@ a {
 .gradient-text {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -158,13 +159,24 @@ header nav {
     font-weight: 800;
     font-size: 1.2rem;
     line-height: 1;
+    color: var(--white);
+    /* White by default */
+}
+
+header.scrolled .logo-text .main {
+    color: var(--text-main);
 }
 
 .logo-text .sub {
     font-size: 0.65rem;
     font-weight: 600;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
+    /* White dim */
     letter-spacing: 2px;
+}
+
+header.scrolled .logo-text .sub {
+    color: var(--text-light);
 }
 
 .nav-links {
@@ -175,6 +187,11 @@ header nav {
 .nav-links a {
     font-weight: 600;
     font-size: 0.95rem;
+    color: var(--white);
+    /* White by default */
+}
+
+header.scrolled .nav-links a {
     color: var(--text-main);
 }
 
@@ -182,14 +199,28 @@ header nav {
     color: var(--accent-color);
 }
 
+header.scrolled .nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Burger color logic */
+.menu-toggle span {
+    background: var(--white);
+}
+
+header.scrolled .menu-toggle span {
+    background: var(--text-main);
+}
+
 /* Hero Section */
 .hero {
-    height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     color: var(--white);
     overflow: hidden;
+    padding: 120px 0 60px 0;
 }
 
 .hero-bg {
@@ -207,7 +238,7 @@ header nav {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.4));
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.6));
     z-index: -1;
 }
 
@@ -604,38 +635,61 @@ footer {
 
 .modal-content {
     background: var(--white);
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 500px;
+    /* More focused card width */
+    max-height: 90vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
     animation: modalIn 0.3s ease-out;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes modalIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: scale(0.9) translateY(20px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1) translateY(0);
     }
 }
 
 .modal-close {
     position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 2rem;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
     cursor: pointer;
     z-index: 10;
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    background: var(--accent-color);
 }
 
 .modal-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    /* Vertical integrated layout */
+}
+
+.modal-img {
+    height: 300px;
+    width: 100%;
 }
 
 .modal-img img {
@@ -645,25 +699,29 @@ footer {
 }
 
 .modal-info {
-    padding: 40px;
+    padding: 30px;
+    text-align: center;
 }
 
 .modal-info h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: var(--font-heading);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: var(--text-main);
 }
 
 .modal-price {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--accent-color);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .modal-info p {
     color: var(--text-light);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 /* Animations */
@@ -709,7 +767,20 @@ footer {
     }
 
     .modal-img {
-        height: 300px;
+        height: 220px;
+    }
+
+    .modal-info {
+        padding: 25px 20px;
+    }
+
+    .modal-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .modal-info p {
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
     }
 }
 
@@ -736,11 +807,31 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero-btns {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-controls {
+        justify-content: center;
     }
 
     .footer-grid {
