@@ -1,3 +1,5 @@
+
+
 // Basic scroll animations using Intersection Observer
 const observerOptions = {
     threshold: 0.1
@@ -28,39 +30,34 @@ if (mobileMenu) {
     });
 }
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetHost = this.getAttribute('href');
-        if (targetHost === '#') return;
-        
-        const target = document.querySelector(targetHost);
-        if (target) {
-            // Close mobile menu if open
-            if (mobileMenu && mobileMenu.classList.contains('active')) {
-                mobileMenu.classList.remove('active');
-                navLinksContainer.classList.remove('active');
-            }
 
-            window.scrollTo({
-                top: target.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
 
 // Product Carousel Logic
 const track = document.getElementById('carouselTrack');
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 
+// Render Images in Carousel
+function renderGallery() {
+    if (!track) return;
+    
+    track.innerHTML = galleryImages.map(img => `
+        <li class="carousel-slide">
+            <div class="item-inner" style="background-image: url('${img.src}');" data-src="${img.src}"></div>
+        </li>
+    `).join('');
+}
+
+// Initial Render
+renderGallery();
+
 if (track) {
     let currentPosition = 0;
 
     const moveCarousel = (direction) => {
         const slides = track.querySelectorAll('.carousel-slide');
+        if (slides.length === 0) return;
+        
         const slideWidth = slides[0].offsetWidth + 20; // width + gap
         const visibleWidth = track.parentElement.offsetWidth;
         const totalSlides = slides.length;
@@ -87,21 +84,47 @@ if (track) {
     });
 }
 
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetHost = this.getAttribute('href');
+        if (targetHost === '#') return;
+        
+        const target = document.querySelector(targetHost);
+        if (target) {
+            // Close mobile menu if open
+            if (mobileMenu && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                navLinksContainer.classList.remove('active');
+            }
+
+            window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 // Modal Logic
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImg');
 const closeBtn = document.querySelector('.modal-close');
-const carouselSlides = document.querySelectorAll('.carousel-slide');
 
-carouselSlides.forEach(slide => {
-    slide.addEventListener('click', function() {
-        const bgImg = this.querySelector('.item-inner').style.backgroundImage;
-        const imgSrc = bgImg.replace('url("', '').replace('")', '').replace("url('", "").replace("')", "");
-        
-        modal.classList.add('active');
-        modalImg.src = imgSrc;
+// Event Delegation for Modal
+if (track) {
+    track.addEventListener('click', (e) => {
+        const slide = e.target.closest('.carousel-slide');
+        if (slide) {
+            const inner = slide.querySelector('.item-inner');
+            const imgSrc = inner.getAttribute('data-src');
+            
+            modal.classList.add('active');
+            modalImg.src = imgSrc;
+        }
     });
-});
+}
 
 closeBtn.addEventListener('click', () => {
     modal.classList.remove('active');
