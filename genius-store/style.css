@@ -802,6 +802,10 @@ footer {
         display: flex;
     }
 
+    .nav-links a {
+        color: var(--text-main) !important;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -844,6 +848,9 @@ footer {
 
     .hero-content {
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hide-mobile {
