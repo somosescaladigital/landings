@@ -6,7 +6,7 @@ const products = [
         price: "$210.000",
         image: "images/mera-mera.png",
         badge: "ENVÍO GRATIS",
-        link: "https://wa.me/5491100000000"
+        link: "https://wa.me/5491167093876"
     },
     {
         id: 2,
