@@ -14,7 +14,7 @@ const products = [
         price: "$180.000",
         image: "images/straw-hat.png",
         badge: "STOCK LIMITADO",
-        link: "https://wa.me/5491100000000"
+        link: "https://wa.me/5491167093876"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const products = [
         price: "$250.000",
         image: "images/wanted-luffy.png",
         badge: "LANA ECO",
-        link: "https://wa.me/5491131563172"
+        link: "https://wa.me/5491167093876"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const products = [
         price: "$210.000",
         image: "images/skull-pink.png",
         badge: "MÁS VENDIDO",
-        link: "https://wa.me/5491131563172"
+        link: "https://wa.me/5491167093876"
     }
 ];
 
