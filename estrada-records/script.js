@@ -27,7 +27,7 @@ const rehearsalAvailability = [
 ];
 
 // WhatsApp Number (Change here!)
-const waNumber = "5491100000000";
+const waNumber = "5491137045060";
 
 function renderAvailability() {
     const grid = document.getElementById('availabilityGrid');
