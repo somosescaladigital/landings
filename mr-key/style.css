@@ -541,6 +541,13 @@ header nav {
     background: #f8f9fa;
 }
 
+/* Map */
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+/* Footer */
 footer {
     background: var(--text-dark);
     color: var(--white);
