@@ -639,6 +639,20 @@ footer {
 
     .hero-btns {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 40px;
+        gap: 15px;
+    }
+
+    .hero-btns a {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
     .hero-stats {
