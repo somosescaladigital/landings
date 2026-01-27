@@ -234,6 +234,10 @@ header nav {
     margin-bottom: 40px;
 }
 
+.show-mobile-hero {
+    display: none;
+}
+
 .btn-primary {
     background: var(--primary-blue);
     color: var(--white);
@@ -665,6 +669,14 @@ footer {
 
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hide-mobile-hero {
+        display: none;
+    }
+
+    .show-mobile-hero {
+        display: flex;
     }
 }
 
