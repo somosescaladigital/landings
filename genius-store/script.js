@@ -1,51 +1,5 @@
-// Product Data
-const products = [
-    {
-        id: 1,
-        name: "Batería de Aluminio Hudson (5 Piezas)",
-        category: "bazar",
-        price: "$92.000",
-        image: "images/cookware.png",
-        description: "Set premium de cocina Hudson. Aluminio de alta calidad con 3 capas de antiadherente y mangos símil madera. Incluye cacerola, sartén y jarro.",
-        badge: "Premium"
-    },
-    {
-        id: 2,
-        name: "Rebanador de Huevos Hudson",
-        category: "bazar",
-        price: "$20.000",
-        image: "images/slicer.png",
-        description: "Utensilio esencial de cocina. Diseño liviano, duradero y muy fácil de usar para cortes perfectos.",
-        badge: "Novedad"
-    },
-    {
-        id: 3,
-        name: "Termo Black Edition con Manija",
-        category: "bazar",
-        price: "$40.000",
-        image: "images/thermo.png",
-        description: "Termo de acero inoxidable con diseño robusto, manija rebatible y gran capacidad de conservación térmica.",
-        badge: "Más Vendido"
-    },
-    {
-        id: 4,
-        name: "Parlante Mobile Speaker RGB",
-        category: "electronica",
-        price: "$70.000",
-        image: "images/speaker.png",
-        description: "Sistema de sonido con luces LED dinámicas. Batería de 1500mAh, conexión Bluetooth y gran potencia de sonido.",
-        badge: "Oferta"
-    },
-    {
-        id: 5,
-        name: "Aro de Luz RGB + Trípode Profesional",
-        category: "gadgets",
-        price: "$30.000",
-        image: "images/ringlight.png",
-        description: "Ideal para creadores de contenido. Múltiples colores RGB, control de intensidad y trípode ajustable incluido.",
-        badge: "Top Ventas"
-    }
-];
+// Product Data - Now dynamic!
+let products = [];
 
 // DOM Elements
 const productsGrid = document.getElementById('productsGrid');
@@ -55,6 +9,18 @@ const navLinks = document.querySelector('.nav-links');
 const header = document.getElementById('header');
 const modal = document.getElementById('productModal');
 const modalClose = document.querySelector('.modal-close');
+
+// Load Products from Vercel API
+async function loadProducts() {
+    try {
+        const response = await fetch('/api/products');
+        products = await response.json();
+        renderProducts();
+    } catch (error) {
+        console.error("Error fetching products:", error);
+        productsGrid.innerHTML = '<p class="text-center">Error al cargar productos.</p>';
+    }
+}
 
 // Global Function to handle categories clicks from the categories section
 window.scrollToProducts = (category) => {
@@ -75,6 +41,11 @@ function renderProducts(filter = 'all') {
         ? products 
         : products.filter(p => p.category === filter);
 
+    if (filtered.length === 0) {
+        productsGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1; opacity: 0.5; padding: 2rem;">No hay productos en esta categoría.</p>';
+        return;
+    }
+
     productsGrid.innerHTML = filtered.map(product => `
         <div class="product-card reveal">
             <div class="product-img">
@@ -85,7 +56,7 @@ function renderProducts(filter = 'all') {
                 <span class="product-category">${product.category}</span>
                 <h3>${product.name}</h3>
                 <p class="product-price">${product.price}</p>
-                <button class="product-btn" onclick="openProductModal(${product.id})">Ver Detalles</button>
+                <button class="product-btn" onclick="openProductModal('${product.id}')">Ver Detalles</button>
             </div>
         </div>
     `).join('');
@@ -187,5 +158,5 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Initial Render
-renderProducts();
+// Initial Load
+loadProducts();
