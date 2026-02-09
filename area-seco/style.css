@@ -1,0 +1,444 @@
+:root {
+    --primary: #D32F2F;
+    /* Construction Red */
+    --secondary: #263238;
+    /* Dark Grey/Slate */
+    --accent: #FFC107;
+    /* Durlock Yellow hint */
+    --white: #ffffff;
+    --text-dark: #212121;
+    --text-light: #f5f5f5;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* Prevents horizontal overflow */
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Strict overflow control */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 6%;
+    /* Better side margins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.btn-nav-wsp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25d366;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border-radius: 50px;
+    /* More modern rounded look */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-nav-wsp:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 6%;
+    /* Matched header padding */
+    width: 100%;
+    margin: 0;
+}
+
+.hero-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Focused Hero Button */
+.btn-hero-wsp {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #25d366;
+    color: white;
+    padding: 1rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-hero-wsp:hover {
+    transform: scale(1.05);
+    background: #128c7e;
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+}
+
+/* Info Bar */
+.info-bar {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 40px 6%;
+    display: flex;
+    /* Switched to flex for better controlled wrap on mobile */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.info-item i {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Services */
+.services {
+    padding: 100px 6%;
+    background: #fcfcfc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--primary);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+/* Instagram Section */
+.instagram-section {
+    padding: 100px 6%;
+    text-align: center;
+    background: var(--white);
+}
+
+.instagram-header {
+    margin-bottom: 50px;
+}
+
+.instagram-header i {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.instagram-header h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.insta-item {
+    aspect-ratio: 1/1;
+    background: #eee;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.insta-item:hover img {
+    transform: scale(1.1);
+}
+
+.insta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.insta-item:hover .insta-overlay {
+    opacity: 1;
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-instagram:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+/* Durlock Partner */
+.partner-section {
+    padding: 60px 6%;
+    background: #fdd835;
+    /* Durlock Yellow */
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+
+.partner-logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #999;
+    padding: 80px 6% 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.6rem 6%;
+    }
+
+    .logo img {
+        height: 36px;
+    }
+
+    .btn-nav-wsp span {
+        display: none;
+    }
+
+    .btn-nav-wsp {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.25rem;
+    }
+
+    .btn-nav-wsp i {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        padding: 0 4%;
+    }
+
+    .btn-hero-wsp {
+        width: 100%;
+        max-width: 300px;
+        /* Limit width on mobile but keep centered */
+        justify-content: center;
+    }
+
+    .services,
+    .instagram-section,
+    .info-bar,
+    .partner-section,
+    footer {
+        padding: 60px 6%;
+    }
+
+    .info-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+}
