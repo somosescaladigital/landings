@@ -99,8 +99,10 @@ header nav {
 .logo-text {
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
+    /* Slightly smaller to fit long name */
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -181,7 +183,7 @@ header nav {
 }
 
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     line-height: 1.1;
     margin: 20px 0;
 }
@@ -262,6 +264,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 60px;
+    justify-content: center;
+    /* Centers cards when they wrap */
 }
 
 .service-card {
@@ -270,6 +274,11 @@ section {
     border-radius: 8px;
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content inside cards */
+    text-align: center;
 }
 
 .service-card:hover {
@@ -301,6 +310,11 @@ section {
 
 .service-list {
     list-style: none;
+    text-align: left;
+    /* Keep text left aligned for readability */
+    display: inline-block;
+    /* But center the block itself */
+    margin: 0 auto;
 }
 
 .service-list li {
@@ -582,11 +596,22 @@ footer {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .logo-text {
+        font-size: 0.9rem;
     }
 
     .hero-btns {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-outline {
+        text-align: center;
+        width: 100%;
     }
 
     .studio-image img {

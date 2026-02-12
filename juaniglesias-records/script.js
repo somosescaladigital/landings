@@ -27,32 +27,10 @@ const rehearsalAvailability = [
 ];
 
 // WhatsApp Number (Change here!)
-const waNumber = "5491137045060";
-
-function renderAvailability() {
-    const grid = document.getElementById('availabilityGrid');
-    if (!grid) return;
-
-    grid.innerHTML = rehearsalAvailability.map(dayInfo => `
-        <div class="day-card reveal">
-            <h3>${dayInfo.day}</h3>
-            <div class="slots-list">
-                ${dayInfo.slots.map(slot => {
-                    const message = `¡Hola Estrada Records! 👋 Me interesa reservar la sala de ensayo para el día ${dayInfo.day} en el horario de ${slot}. ¿Está disponible?`;
-                    return `
-                        <a href="https://wa.me/${waNumber}?text=${encodeURIComponent(message)}" target="_blank" class="slot-btn">
-                            <span>${slot}</span>
-                            <span class="status">LIBRE</span>
-                        </a>
-                    `;
-                }).join('')}
-            </div>
-        </div>
-    `).join('');
-}
+const waNumber = "5491154100231";
 
 // Initial Render
-renderAvailability();
+// Availability and Spotify sections removed by user
 
 // Header scroll effect
 const header = document.getElementById('header');
