@@ -945,6 +945,13 @@ body {
     .hero-container {
         grid-template-columns: 1fr;
         gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-image {
@@ -952,11 +959,16 @@ body {
     }
 
     .mascot-hero {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero-features {
+        align-items: center;
+        text-align: left;
     }
 
     .location-content {
@@ -995,11 +1007,12 @@ body {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        word-wrap: break-word;
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .section-title {
@@ -1008,6 +1021,7 @@ body {
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
     }
 
     .btn-large {
@@ -1024,22 +1038,38 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .about-card,
+    .service-card,
+    .review-card,
+    .contact-card {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
     .nav-logo-text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
 
     .section-title {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
 
     .mascot-hero {
-        max-width: 250px;
+        max-width: 220px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 }

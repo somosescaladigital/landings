@@ -30,6 +30,7 @@
 }
 
 body {
+    opacity: 10%;
     font-family: var(--font-secondary);
     color: var(--charcoal);
     line-height: 1.6;
