@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Todo Por Nada | Pilar</title>
+    <meta name="description"
+        content="Peluquería y Barbería en Pilar. Cortes, barba y estilismo con la mejor onda y tecnología. Tu estilo, tu precio.">
+
+    <!-- Fonts: Oswald (Industrial/Bold) & Roboto (Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                TODO POR <span class="highlight">NADA</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">La Pelu</a></li>
+                    <li><a href="#opiniones">Clientes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center reveal-up">
+            <div class="mascot-logo">
+                <img src="images/mascot.png" alt="Todo Por Nada Logo - Calavera">
+            </div>
+            <h1>CALIDAD PROFESIONAL <br><span class="highlight">BUENA ONDA</span></h1>
+            <p>Peluquería & Barbería en el corazón de Pilar.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5491168861977" target="_blank" class="btn btn-primary">RESERVAR TURNO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Banner -->
+    <div class="info-banner">
+        <div class="container banner-grid">
+            <div class="banner-item">
+                <i class="fas fa-bolt"></i>
+                <img src="" alt="" style="display:none;"> <!-- Placeholder fix if needed, using icon -->
+                <span>TECNOLOGÍA DE PUNTA</span>
+            </div>
+            <div class="banner-item">
+                <i class="fas fa-clock"></i>
+                <span>SIN ESPERAS</span>
+            </div>
+            <div class="banner-item">
+                <i class="fas fa-thumbs-up"></i>
+                <span>ATENCIÓN 10/10</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="nosotros" class="section about">
+        <div class="container about-grid">
+            <div class="about-text reveal-left">
+                <h2>CORTATE CON LOS QUE SABEN</h2>
+                <div class="divider"></div>
+                <p>En <strong>Todo Por Nada</strong> no damos vueltas. Nos tomamos el tiempo necesario para que tu corte
+                    quede impecable, pero sin hacerte perder el día.</p>
+                <p>Elegí con quién cortarte, relajate y disfrutá de un ambiente con buena música y profesionales
+                    detallistas.</p>
+            </div>
+            <div class="about-image reveal-right">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop"
+                    alt="Barbería estilo industrial">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>NUESTROS SERVICIOS</h2>
+                <div class="divider center"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-up">
+                    <div class="icon-box"><i class="fas fa-cut"></i></div>
+                    <h3>CORTE & ESTILISMO</h3>
+                    <p>Cortes modernos, clásicos y cambios de look. Asesoramiento personalizado para tu tipo de rostro.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card reveal-up transition-delay-100">
+                    <div class="icon-box"><i class="fas fa-magic"></i></div>
+                    <h3>BARBERÍA & AFEITADO</h3>
+                    <p>Perfilado de barba y afeitado tradicional con toalla caliente. Tecnología para el cuidado de tu
+                        piel.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card reveal-up transition-delay-200">
+                    <div class="icon-box"><i class="fas fa-spray-can"></i></div>
+                    <h3>PRODUCTOS & CUIDADO</h3>
+                    <p>Los mejores productos para mantener tu estilo todos los días. Ceras, geles y tratamientos
+                        capilares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="opiniones" class="section reviews">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>LO QUE DICEN ELLOS</h2>
+                <div class="divider center"></div>
+            </div>
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card reveal-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"Hacen un muy buen trabajo, se toman el tiempo necesario. Muy buena tecnología para corte de
+                        barba. Podes elegir con quién y cuando cortarte."</p>
+                    <div class="author">- Maximiliano Nahuel Suarez</div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-card reveal-up transition-delay-100">
+                    <div class="stars">★★★★★</div>
+                    <p>"Súper amables, fui por primera vez hoy y ya decidí que van a ser mis peluqueros de confianza...
+                        La atención 10/10, unos genios y súper detallistas."</p>
+                    <div class="author">- Camila Quintero</div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-card reveal-up transition-delay-200">
+                    <div class="stars">★★★★★</div>
+                    <p>"Buena atención, buena onda. Disponibilidad, ideas, son muy profesionales... Un 10!"</p>
+                    <div class="author">- Sebastián Aguilar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section contact">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal-left">
+                <h2>VENÍ A CONOCERNOS</h2>
+                <div class="divider"></div>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>UBICACIÓN</h4>
+                        <p>11 de Septiembre esq. Independencia<br>Pilar, Buenos Aires</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>TURNOS WHATSAPP</h4>
+                        <p><a href="https://wa.me/5491168861977" target="_blank">+54 9 11 6886-1977</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>TELÉFONO</h4>
+                        <p><a href="tel:01168861977">011 6886-1977</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map reveal-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.479262334887!2d-58.91428382346768!3d-34.46563394998797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cce4b08703f%3A0x6b801a247248f707!2s11%20de%20Septiembre%20%26%20Independencia%2C%20Pilar!5e0!3m2!1ses!2sar!4v1707920100000!5m2!1ses!2sar"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Peluquería Todo Por Nada. Pilar.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WA -->
+    <a href="https://wa.me/5491168861977" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
