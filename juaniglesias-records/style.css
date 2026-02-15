@@ -166,7 +166,7 @@ header nav {
     display: flex;
     align-items: center;
     position: relative;
-    background: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+    background: url('images/image.jpeg') center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -287,52 +287,15 @@ section {
 }
 
 .service-card.active {
-    background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), url('https://images.unsplash.com/photo-1514320296841-2e4857283b75?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80') center/cover;
+    background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), url('images/image2.jpeg') center/cover;
     border-color: var(--primary-gold);
 }
 
-.service-icon {
-    font-size: 2.5rem;
-    color: var(--primary-gold);
-    margin-bottom: 25px;
-}
-
-.service-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: var(--text-dim);
-    margin-bottom: 25px;
-    font-size: 0.95rem;
-}
-
-.service-list {
-    list-style: none;
-    text-align: left;
-    /* Keep text left aligned for readability */
-    display: inline-block;
-    /* But center the block itself */
-    margin: 0 auto;
-}
-
-.service-list li {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.service-list i {
-    color: var(--primary-gold);
-    font-size: 0.8rem;
-}
+/* ... (skipping unchanged lines) ... */
 
 /* Listen section */
 .listen {
-    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover fixed;
+    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('images/image3.jpeg') center/cover fixed;
 }
 
 .listen h2 {
