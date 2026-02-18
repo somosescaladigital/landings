@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martinez Pet Shop | Baño y Peluquería Canina</title>
+    <meta name="description"
+        content="Peluquería canina y pet shop en CABA. Baños, cortes y el mejor trato para tu mascota. Atendemos perros con piel sensible y nerviosos.">
+    <!-- Google Fonts: Fredoka (Fun) & Nunito (Rounded/Friendly) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-paw"></i> Martinez <span class="highlight">Pet Shop</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Peluquería</a></li>
+                    <li><a href="#opiniones">Clientes Felices</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content text-center reveal-up">
+                <span class="badge">AMOR POR LOS ANIMALES</span>
+                <h1>¡El Spa que tu mascota <br>se <span class="highlight-text">merece!</span></h1>
+                <p>Baños, cortes de raza y mimos para que vuelvan a casa hermosos y felices.</p>
+                <a href="https://wa.me/54111568400049" target="_blank" class="btn btn-primary">RESERVAR TURNO <i
+                        class="fas fa-bone"></i></a>
+            </div>
+            <div class="hero-image reveal-left">
+                <!-- Placeholder for a happy dog image -->
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=2071&auto=format&fit=crop"
+                    alt="Perro feliz en el baño">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Vibe -->
+    <section class="section features-bar">
+        <div class="container features-grid">
+            <div class="feature-item reveal-up">
+                <i class="fas fa-heart"></i>
+                <h3>Trato Amoroso</h3>
+                <p>Paciencia con perritos nerviosos.</p>
+            </div>
+            <div class="feature-item reveal-up transition-delay-100">
+                <i class="fas fa-pump-soap"></i>
+                <h3>Productos Hipoalergénicos</h3>
+                <p>Cuidamos pieles sensibles.</p>
+            </div>
+            <div class="feature-item reveal-up transition-delay-200">
+                <i class="fas fa-certificate"></i>
+                <h3>Profesionales</h3>
+                <p>Tu mascota en buenas manos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Nuestros Servicios</h2>
+                <div class="divider center"></div>
+                <p>Todo para el cuidado y belleza de tu mejor amigo.</p>
+            </div>
+            <div class="services-wrapper">
+                <!-- Baño y Corte -->
+                <div class="service-card reveal-up">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=2071&auto=format&fit=crop"
+                            alt="Corte canino">
+                    </div>
+                    <div class="card-content">
+                        <h3>Baño y Corte</h3>
+                        <p>Cortes de raza, esquila higiénica y desenredado. Incluye limpieza de oídos y corte de uñas.
+                        </p>
+                    </div>
+                </div>
+                <!-- Baño Terapéutico -->
+                <div class="service-card reveal-up transition-delay-100">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?q=80&w=2071&auto=format&fit=crop"
+                            alt="Baño perro">
+                    </div>
+                    <div class="card-content">
+                        <h3>Baños Terapéuticos</h3>
+                        <p>Para pieles sensibles o con alergias. Usamos productos específicos para cada necesidad.</p>
+                    </div>
+                </div>
+                <!-- Pet Shop -->
+                <div class="service-card reveal-up transition-delay-200">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1964&auto=format&fit=crop"
+                            alt="Accesorios mascotas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pet Shop</h3>
+                        <p>Alimentos balanceados, juguetes, correas y todo lo que necesitás para mimarlos.</p>
+                    </div>
+                </div>
+                <!-- Envíos a Domicilio -->
+                <div class="service-card reveal-up transition-delay-300">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=2070&auto=format&fit=crop"
+                            alt="Entrega de alimento">
+                    </div>
+                    <div class="card-content">
+                        <h3>Envíos a Domicilio</h3>
+                        <p>Llevamos el alimento de tu mascota hasta la puerta de tu casa en Martínez y alrededores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="opiniones" class="section reviews">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Dueños Felices</h2>
+                <div class="divider center"></div>
+            </div>
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-box reveal-left">
+                    <p>"Hola!!! Hoy llevamos a Winni a que le corten el pelo y la bañen, ella estuvo super tranquila se
+                        la notó cómoda....tuvimos una super buena experiencia, es para recomendar tienen muy buen
+                        trato."</p>
+                    <div class="reviewer">
+                        <div class="avatar">L</div>
+                        <div class="name">Lau Reani</div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-box reveal-up">
+                    <p>"Excelente servicio, dejaron a mi perro impecable y la atención fue de primera. Muy
+                        recomendados."</p>
+                    <div class="reviewer">
+                        <div class="avatar">G</div>
+                        <div class="name">Gabriel Sampayo</div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-box reveal-right">
+                    <p>"Llevé a mis dos perros, una con piel muy sensible y me las devolvieron hermosas y perfumadas.
+                        Recomiendo!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">M</div>
+                        <div class="name">Mati Ida</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section contact">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal-left">
+                <h2>¡Te esperamos!</h2>
+                <p>Vení a conocernos o escribinos por WhatsApp para reservar tu turno.</p>
+
+                <ul class="info-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Luis Dellepiane 680, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <span><a href="https://wa.me/54111568400049" target="_blank">11 6840-0049</a></span>
+                    </li>
+                    <li>
+                        <i class="far fa-clock"></i>
+                        <span>Lunes a Sábado (Turnos programados)</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/54111568400049" target="_blank" class="btn btn-whatsapp-large">
+                    <i class="fab fa-whatsapp"></i> ENVIAR MENSAJE
+                </a>
+            </div>
+            <div class="map-box reveal-right">
+                <!-- Luis Dellepiane 680 map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.148815167576!2d-58.3857500!3d-34.603722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLuis%20Dellepiane%20680!5e0!3m2!1ses!2sar!4v1630000000000!5m2!1ses!2sar"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Martinez Pet Shop &copy; 2026. Amor por las mascotas.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WA -->
+    <a href="https://wa.me/54111568400049" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
