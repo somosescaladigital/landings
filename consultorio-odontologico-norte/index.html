@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Consultorio Odontológico del Norte - San Isidro. Odontología general, estética dental e implantes. Pedí turno por WhatsApp.">
+  <title>Consultorio Odontológico del Norte — San Isidro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">Consultorio Odontológico del Norte</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a class="cta small" id="cta-nav" href="https://wa.me/5491124009139" target="_blank" rel="noopener">Pedir Turno vía WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Tu sonrisa en las mejores manos del Norte</h1>
+          <p class="subtitle">Atención en Av. Andrés Rolón 717, San Isidro — Equipo profesional y trato humano.</p>
+          <p class="hero-actions">
+            <a id="cta-hero" class="cta" href="https://wa.me/5491124009139" target="_blank" rel="noopener">Pedir Turno vía WhatsApp</a>
+            <a class="ghost" href="#servicios">Ver servicios</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- SVG banner ilustrativo, responsive -->
+          <svg class="banner-svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#f8fbff" />
+                <stop offset="1" stop-color="#e9f2ff" />
+              </linearGradient>
+            </defs>
+            <rect width="1200" height="600" fill="url(#g)" rx="20"/>
+            <g transform="translate(80,60)">
+              <g fill="#0056b3" opacity="0.12">
+                <circle cx="420" cy="120" r="110" />
+                <circle cx="680" cy="220" r="80" />
+              </g>
+              <g transform="translate(60,40)" fill="#0056b3">
+                <path d="M220 160c20-28 64-46 110-46s90 18 110 46c-20 28-64 46-110 46s-90-18-110-46z" opacity="0.95"/>
+              </g>
+            </g>
+            <text x="70%" y="60%" fill="#0b2a4a" font-size="36" font-weight="600" opacity="0.12">Consultorio Odontológico</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="container servicios">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.2 0 4 1.1 5.1 2.8 1 1.5 1.4 3.4 1.4 5.2 0 2.6-1.1 4.6-2.7 6.1-1.5 1.4-3.7 2.8-4.8 3.3-.6.3-1.4.3-2 0-1.1-.5-3.3-1.9-4.8-3.3C5.7 16.6 4.6 14.6 4.6 12c0-1.8.4-3.7 1.4-5.2C7.9 3.1 9.8 2 12 2z"/></svg><h3>Odontología General</h3></div>
+          <p>Revisiones, limpieza, empastes y prevención para toda la familia.</p>
+        </article>
+        <article class="card">
+          <div class="card-head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3l2 4 4 .6-3 2.6.8 4L12 13.8 7.2 17.2l.8-4L5 10.6 9 10z"/></svg><h3>Estética Dental</h3></div>
+          <p>Blanqueamientos, carillas y tratamientos estéticos personalizados.</p>
+        </article>
+        <article class="card">
+          <div class="card-head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c1.7 0 3.3.7 4.5 1.9 1.2 1.2 1.9 2.8 1.9 4.5 0 3.2-2.6 5.8-5.8 5.8S6.8 11.6 6.8 8.4C6.8 6.7 7.5 5.1 8.7 3.9 9.9 2.7 11.5 2 12 2zM11 12v8h2v-8h-2z"/></svg><h3>Implantes</h3></div>
+          <p>Implantes dentales con planificación digital y seguimiento profesional.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nueva sección de Reseñas -->
+    <section id="reseñas" class="container reseñas">
+      <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+      <div class="reseñas-grid">
+        <article class="reseña-card">
+          <div class="reseña-header">
+            <span class="reseña-avatar">J.R.</span>
+            <div class="reseña-info">
+              <p class="reseña-nombre">Juan Rodríguez</p>
+              <div class="reseña-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="reseña-texto">"Excelente atención y profesionalismo. Me siento muy cómodo cada vez que vengo. ¡Mi sonrisa nunca se vio mejor!"</p>
+        </article>
+        <article class="reseña-card">
+          <div class="reseña-header">
+            <span class="reseña-avatar">A.S.</span>
+            <div class="reseña-info">
+              <p class="reseña-nombre">Ana Sánchez</p>
+              <div class="reseña-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="reseña-texto">"El equipo es increíblemente amable y atento. Los recomiendo a todos mis amigos y familiares. ¡Gracias por el gran trabajo!"</p>
+        </article>
+        <article class="reseña-card">
+          <div class="reseña-header">
+            <span class="reseña-avatar">M.G.</span>
+            <div class="reseña-info">
+              <p class="reseña-nombre">Martín Gómez</p>
+              <div class="reseña-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="reseña-texto">"Siempre puntuales y el consultorio está impecable. Estoy muy contento con los resultados de mi tratamiento de estética dental."</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto container">
+      <h2 class="section-title">Contacto y Horarios</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Teléfono</h3>
+          <p class="phone">011 2400-9139</p>
+          <a class="cta" href="https://wa.me/5491124009139" target="_blank" rel="noopener">Enviar WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <h3>Horarios</h3>
+          <ul>
+            <li><strong>Lunes:</strong> 13:00 – 19:00</li>
+            <li><strong>Martes a Viernes:</strong> 10:00 – 19:00</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <h3>Dirección</h3>
+          <p>Av. Andrés Rolón 717, San Isidro</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapa" class="mapa container">
+      <h2 class="section-title">Dónde estamos</h2>
+      <div id="map" class="map-placeholder" role="region" aria-label="Mapa de la ubicación">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Andr%C3%A9s+Rol%C3%B3n+717+San+Isidro&output=embed"
+          width="100%" height="100%" style="border:0;border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa: Av. Andrés Rolón 717, San Isidro"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Consultorio Odontológico del Norte — San Isidro</p>
+      <a href="#" class="small-link">Política de privacidad</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

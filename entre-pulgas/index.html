@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+    <link rel="icon" type="image/png" href="img/logo.png">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,7 +30,7 @@
     <header class="header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i class="fas fa-paw"></i> Entre <span class="highlight">Pulgas</span>
+                <img src="img/logo.png" alt="Logo"> Entre <span class="highlight">Pulgas</span>
             </a>
             <button class="menu-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
@@ -39,6 +39,8 @@
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
                     <li><a href="#opiniones">Opiniones</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -122,6 +124,60 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="galeria" class="section gallery">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Nuestra Galería</h2>
+                <div class="divider center"></div>
+                <p>Un vistazo a nuestro trabajo y a los amigos que nos visitan.</p>
+            </div>
+            <div class="slider-wrapper reveal-up">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide"><img src="fotos/foto.jpeg" alt="Mascota 1"></div>
+                        <div class="slide"><img src="fotos/foto1.jpeg" alt="Mascota 2"></div>
+                        <div class="slide"><img src="fotos/foto2.jpeg" alt="Mascota 3"></div>
+                        <div class="slide"><img src="fotos/foto3.jpeg" alt="Mascota 4"></div>
+                        <div class="slide"><img src="fotos/foto4.jpeg" alt="Mascota 5"></div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="horarios" class="section hours">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2>Nuestros Horarios</h2>
+                <div class="divider center"></div>
+                <p>Te esperamos para mimar a tu mascota en estos horarios.</p>
+            </div>
+            <div class="hours-grid">
+                <div class="hour-card reveal-left">
+                    <div class="hour-icon">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <h3>Lunes a Viernes</h3>
+                    <p class="time">11:00 hs — 20:00 hs</p>
+                    <p class="status">Horario Corrido</p>
+                </div>
+                <div class="hour-card reveal-right">
+                    <div class="hour-icon">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <h3>Sábados</h3>
+                    <p class="time">11:00 hs — 18:00 hs</p>
+                    <p class="status">Horario Corrido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Reviews Section -->
     <section id="opiniones" class="section reviews">
         <div class="container">
@@ -196,7 +252,7 @@
                             <i class="far fa-clock"></i>
                             <div>
                                 <strong>Horarios</strong>
-                                <span>Lunes a Sábado de 10:00 a 19:30</span>
+                                <span>Lun a Vie: 11:00 - 20:00<br>Sáb: 11:00 - 18:00</span>
                             </div>
                         </li>
                     </ul>
@@ -217,7 +273,7 @@
     <footer class="footer">
         <div class="container text-center">
             <div class="footer-logo">
-                <i class="fas fa-paw"></i> Entre Pulgas
+                <img src="img/logo.png" alt="Logo"> Entre Pulgas
             </div>
             <p>&copy; 2026 Petshop Entre Pulgas. Diseño con amor por las mascotas.</p>
         </div>
@@ -227,6 +283,12 @@
     <a href="https://wa.me/5491126681655" class="float-wa" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Vista previa">
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -128,12 +128,18 @@ section {
 }
 
 .logo {
-    font-size: 1.8rem;
-    color: var(--dark);
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 12px;
+    font-size: 1.8rem;
+    color: var(--dark);
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo i {
@@ -166,9 +172,15 @@ section {
     display: none;
     background: none;
     border: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: var(--dark);
+    padding: 8px;
+    transition: var(--transition);
+}
+
+.menu-toggle:hover {
+    color: var(--primary);
 }
 
 /* Hero */
@@ -304,6 +316,180 @@ section {
     font-size: 1.7rem;
 }
 
+/* Gallery Slider */
+.gallery {
+    background-color: var(--bg-light);
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.slider-container {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slide {
+    flex: 0 0 25%;
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slide img:hover {
+    transform: scale(1.02);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.slider-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.slider-btn.prev {
+    left: -25px;
+}
+
+.slider-btn.next {
+    right: -25px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dfe6e9;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background: var(--primary);
+    transform: scale(1.3);
+}
+
+@media (max-width: 1024px) {
+    .slide {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    .slide img {
+        height: 350px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider-btn.next {
+        right: 10px;
+    }
+}
+
+/* Opening Hours */
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hour-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.hour-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+}
+
+.hour-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.hour-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.hour-card .time {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.hour-card .status {
+    font-weight: 600;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
 /* Reviews */
 .reviews {
     background-color: #fcfcfc;
@@ -408,7 +594,20 @@ section {
 
 .footer-logo {
     font-size: 2.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    /*  filter: brightness(0) invert(1); */
+    object-fit: contain;
 }
 
 .footer p {
@@ -538,4 +737,76 @@ section {
     width: 100%;
     justify-content: center;
 }
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transform: scale(0.8);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lightbox.active .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: var(--white);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    background: var(--primary);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+    }
 }
