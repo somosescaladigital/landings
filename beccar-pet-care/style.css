@@ -1,0 +1,470 @@
+:root {
+    --primary: #6b8e23;
+    /* Olive/Sage Green for a natural pet care vibe */
+    --primary-dark: #556b2f;
+    --secondary: #d2b48c;
+    /* Tan/Soft Brown for warmth */
+    --accent: #f4a460;
+    /* Sandy Brown */
+    --text-dark: #3e2723;
+    /* Very dark brown for better readability */
+    --text-light: #6d4c41;
+    --bg-light: #fffaf0;
+    /* Floral White/Cream */
+    --bg-alt: #f5f5dc;
+    /* Beige */
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.85);
+    --shadow: 0 10px 30px rgba(107, 142, 35, 0.1);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+span {
+    color: var(--primary);
+}
+
+p {
+    color: var(--text-light);
+    font-size: 1.15rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1.1rem 2.8rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(107, 142, 35, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(107, 142, 35, 0.3);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--secondary);
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transform: translateY(-4px);
+}
+
+/* Header & Nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.8rem 0;
+    transition: var(--transition);
+}
+
+header.scrolled {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    padding: 1.2rem 0;
+    box-shadow: var(--shadow);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    padding: 12rem 0 6rem;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(210, 180, 140, 0.1) 0%, rgba(107, 142, 35, 0.05) 100%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    margin-bottom: 2rem;
+}
+
+.hero-text p {
+    margin-bottom: 3rem;
+    max-width: 550px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Services */
+.services {
+    padding: 10rem 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.service-card {
+    background: var(--bg-alt);
+    padding: 4rem 3rem;
+    border-radius: 30px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    background: var(--white);
+    box-shadow: 0 20px 40px rgba(107, 142, 35, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+/* Reviews */
+.reviews {
+    padding: 10rem 0;
+    background-color: var(--bg-alt);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.review-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.stars {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.review-response {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--secondary);
+    font-size: 0.95rem;
+}
+
+.review-response strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-dark);
+}
+
+/* Contact */
+.contact {
+    padding: 10rem 0;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.whatsapp-item {
+    margin-top: 1rem;
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: var(--primary);
+    width: 60px;
+    height: 60px;
+    background: rgba(107, 142, 35, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.map-container {
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content,
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: 0 auto 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        height: 100vh;
+        background: var(--bg-light);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.5rem;
+        transition: 0.5s;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
