@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repcell | Reparación Premium de Celulares</title>
+    <meta name="description" content="Especialistas en reparación y mantenimiento de dispositivos móviles en San Isidro. Servicio técnico rápido, seguro y con garantía.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación Ultra Minimalista -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-title">REPCELL</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#encuentranos">Encuéntranos</a>
+            </div>
+            <a href="https://wa.me/5491141413740?text=Hola!%20Me%20contacto%20desde%20su%20p%C3%A1gina%20web" class="btn btn-sm btn-dark nav-btn" target="_blank">Escribirnos</a>
+            <div class="mobile-menu" id="menu-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <!-- Menú Móvil Escondido -->
+        <div class="mobile-dropdown" id="mobile-dropdown">
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#opiniones" class="mobile-link">Opiniones</a>
+            <a href="#encuentranos" class="mobile-link">Encuéntranos</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">PRECISIÓN Y GARANTÍA</span>
+                <h1>Revivimos tu<br>dispositivo.</h1>
+                <p>Servicio técnico clínico en San Isidro. Recuperamos pantallas, baterías y fallas en placa con componentes de máxima calidad. Porque sabemos lo importante que es tu equipo.</p>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/5491141413740?text=Hola!%20Necesito%20un%20presupuesto" class="btn btn-dark btn-lg" target="_blank">
+                        Pedir Presupuesto
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img src="assets/hero.png" alt="Reparación limpia y clínica" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Confiabilidad -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <div class="trust-item reveal">
+                <i class="fa-solid fa-bolt"></i>
+                <p>Reparaciones en el día</p>
+            </div>
+            <div class="trust-item reveal">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>Garantía de servicio</p>
+            </div>
+            <div class="trust-item reveal">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+                <p>San Isidro, GBA Norte</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Clínícos (Light Gray bg) -->
+    <section class="servicios" id="servicios">
+        <div class="section-container">
+            <div class="section-header center reveal">
+                <h2>¿Qué problema tiene?</h2>
+                <p>Soluciones diseñadas para alargar la vida útil de tu inversión tecnológica.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Tarjeta 1 -->
+                <div class="service-card reveal">
+                    <div class="sc-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Pantalla y Módulos</h3>
+                    <p>Reemplazo de pantallas astilladas y tactils defectuosos. Usamos repuestos con colores y respuesta táctil original.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="service-card reveal" style="transition-delay: 100ms;">
+                    <div class="sc-icon"><i class="fa-solid fa-battery-full"></i></div>
+                    <h3>Cambio de Batería</h3>
+                    <p>Recupera la autonomía del primer día si tu celular se apaga pronto o está inflando el panel trasero.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="service-card reveal" style="transition-delay: 200ms;">
+                    <div class="sc-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Placa y Microelectrónica</h3>
+                    <p>Reparación avanzada de circuitos. Equipos mojados, que no dan imagen o no encienden.</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="service-card reveal" style="transition-delay: 300ms;">
+                    <div class="sc-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h3>Pin de Carga y Audio</h3>
+                    <p>Falsos contactos, suciedad interna o micrófonos dañados. Mantenimiento profundo garantizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Feature (Split section) -->
+    <section class="featured-repair">
+        <div class="featured-container">
+            <div class="featured-image reveal">
+                <img src="assets/service.png" alt="Precisión en reparación">
+            </div>
+            <div class="featured-text reveal">
+                <h2>Tu dispositivo se merece ser tratado por especialistas.</h2>
+                <p>Evita sorpresas y chapuzas. En Repcell, manejamos cada dispositivo con guantes y herramientas milimétricas en un entorno libre de polvo. Todo procedimiento se realiza asegurando la integridad de tus datos personales.</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check text-blue"></i> Diagnóstico transparente.</li>
+                    <li><i class="fa-solid fa-check text-blue"></i> Privacidad de datos absoluta.</li>
+                    <li><i class="fa-solid fa-check text-blue"></i> Componentes homologados.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opiniones Ficticias (Estilo iMessage o Cards simples) -->
+    <section class="opiniones" id="opiniones">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2>Clientes en línea.</h2>
+                <p>Algunos comentarios sobre nuestro servicio reciente.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-bubble reveal">
+                    <div class="rb-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="rb-text">"Llevé mi celular que no prendía tras mojarse un poco y me lo dejaron 10 puntos en un par de horas. Súper prolijos y limpios al trabajar."</p>
+                    <p class="rb-author">— Mariano G.</p>
+                </div>
+                
+                <div class="review-bubble reveal" style="transition-delay: 100ms;">
+                    <div class="rb-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="rb-text">"Cambiaron la pantalla astillada enfrente mío casi. Quedó impecable y sin detalles extraños. Recomendado para toda la zona."</p>
+                    <p class="rb-author">— Valentina M.</p>
+                </div>
+
+                <div class="review-bubble reveal" style="transition-delay: 200ms;">
+                    <div class="rb-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <p class="rb-text">"Fui por una batería agotada que me duraba medio día. Excelente el trato que tienen."</p>
+                    <p class="rb-author">— Lucas D.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa y Contacto -->
+    <section class="encuentranos bg-light" id="encuentranos">
+        <div class="section-container">
+            <div class="contact-card reveal">
+                <div class="contact-details">
+                    <h2>Estamos cerca.</h2>
+                    <p class="mb-2">Trae tu equipo hoy mismo y llévatelo reparado. Atendemos consultas directas por WhatsApp para agilizar procesos.</p>
+                    
+                    <div class="cd-item mt-4">
+                        <h4><i class="fa-solid fa-phone"></i> Teléfono y WhatsApp</h4>
+                        <a href="https://wa.me/5491141413740" class="link-dark">011 4141 3740</a>
+                    </div>
+                    
+                    <div class="cd-item">
+                        <h4><i class="fa-solid fa-location-arrow"></i> San Isidro</h4>
+                        <p>Visita nuestro laboratorio. Estaremos encantados de revisarle el equipo sin cargo.</p>
+                    </div>
+
+                    <a href="https://wa.me/5491141413740" class="btn btn-blue btn-wsp-inline mt-2" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Mandar WhatsApp
+                    </a>
+                </div>
+                
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7291771141753!2d-58.55055602383742!3d-34.473887573001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb185599e380f%3A0x983cf7eeeff23a7c!2sRepcell_fye!5e0!3m2!1ses!2sar!4v1711835503253!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <div class="f-brand">
+                    <h3>REPCELL.</h3>
+                    <p>El estándar en reparación técnica.</p>
+                </div>
+                <div class="f-links">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#opiniones">Opiniones</a>
+                    <a href="#encuentranos">Contacto</a>
+                </div>
+            </div>
+            <div class="row footer-bottom">
+                <p>&copy; 2026 Repcell fye. San Isidro, GBA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante Fijo -->
+    <a href="https://wa.me/5491141413740?text=Hola!%20Deseo%20hacer%20una%20consulta" class="wsp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
