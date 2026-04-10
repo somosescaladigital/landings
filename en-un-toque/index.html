@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En un toque Reparaciones | Servicio Técnico Especializado</title>
+    <meta name="description" content="Servicio técnico especializado en celulares en San Fernando. Reparación de pantallas, baterías, pin de carga y microelectrónica.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="logo-text">
+                    <span class="logo-title">En un toque</span>
+                    <span class="logo-subtitle">REPARACIONES</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#resenas">Reseñas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+            </div>
+        </div>
+        <!-- Menú Móvil -->
+        <div class="mobile-dropdown" id="mobile-dropdown">
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#resenas" class="mobile-link">Reseñas</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="badge">Especialistas en Microelectrónica</div>
+            <h1>Tu celular<br><span>Como nuevo</span>, en tiempo récord.</h1>
+            <p>Servicio técnico confiable en San Fernando. Reparamos tu equipo con repuestos de alta calidad y la dedicación que merece.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5491163008169?text=Hola!%20Quisiera%20consultar%20por%20una%20reparaci%C3%B3n" class="btn btn-primary" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar Ahora
+                </a>
+                <a href="#contacto" class="btn btn-secondary">
+                    <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>+1000</h3>
+                    <p>Equipos Reparados</p>
+                </div>
+                <div class="stat-item">
+                    <h3><i class="fa-solid fa-star"></i> 5.0</h3>
+                    <p>En Google Maps</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Garantía</h3>
+                    <p>En repuestos y trabajos</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="assets/hero_bg.png" alt="Reparación de Celulares en Laboratorio" class="hero-image">
+            <div class="glow-effect"></div>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="section-header">
+            <span class="subtitle">LO QUE HACEMOS</span>
+            <h2>Nuestros <span>Servicios</span></h2>
+            <p>Soluciones integrales para prolongar la vida útil de tu dispositivo móvil, desde lo más básico hasta las fallas más complejas en placa.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                <h3>Pin de Carga</h3>
+                <p>Reparación y limpieza de puerto de carga. Si tu celular no carga o falsea el cable, lo solucionamos.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-mobile"></i></div>
+                <h3>Cambio de Módulos</h3>
+                <p>Reemplazo de pantallas rotas, táctil y vidrios. Trabajamos con repuestos originales y alternativas de alta calidad.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-battery-three-quarters"></i></div>
+                <h3>Baterías</h3>
+                <p>Cambio de baterías agotadas o infladas. Recuperá la autonomía de tu celular y evita daños mayores a tu equipo.</p>
+            </div>
+
+            <div class="service-card featured">
+                <div class="service-image">
+                    <img src="assets/micro_soldering.png" alt="Microelectrónica de celulares">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Microelectrónica Avanzada</h3>
+                    <p>Diagnóstico y reparación de componentes en placa, fallas de encendido, problemas de IC de carga y cortos. Soldadura de precisión.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Software / Flasheo</h3>
+                <p>Actualización de sistemas operativos, errores de bucle de encendido (bootloop), eliminación de cuentas por bloqueo.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-headphones-simple"></i></div>
+                <h3>Accesorios y Venta</h3>
+                <p>Fundas, protectores hidrogel/templado, cargadores, cables y auriculares. También venta de equipos seleccionados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="resenas" id="resenas">
+        <div class="section-header center">
+            <span class="subtitle">NUESTROS CLIENTES</span>
+            <h2>Lo que dicen <span>de nosotros</span></h2>
+            <p>La confianza y satisfacción de nuestros clientes nos avalan en Google Maps.</p>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">D</div>
+                    <div class="reviewer-info">
+                        <h4>Dario</h4>
+                        <span class="review-source">Google · Local Guide</span>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                <div class="review-body">
+                    "Muy buena atencion y buenos precios. Lugar confiable. Las veces que fui, no he tenido problema con lo que compre. Recomendables!"
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar bg-pink">P</div>
+                    <div class="reviewer-info">
+                        <h4>pao morán</h4>
+                        <span class="review-source">Google</span>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-body">
+                    "Llevamos para arreglar el pin de carga de un iPhone y era que estaba sucio , lo limpió y quedó perfecto!!! Excelente atención y honestidad!!!! Súper recomendable."
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar bg-orange">A</div>
+                    <div class="reviewer-info">
+                        <h4>Anahi Joaquin</h4>
+                        <span class="review-source">Google · Local Guide</span>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-body">
+                    "Excelente atención, unos genios los chicos. Arreglaron enseguida el celular de mi hijo. Recomiendo al 100% la atención y como trabajan"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="contacto" id="contacto">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Encontranos <br><span>fácil y rápido</span></h2>
+                <p>Acércate al local para un presupuesto sin cargo de tu equipo en el momento.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-data">
+                            <h4>Dirección</h4>
+                            <p>Calle Constitución 481, Local 3, <br> Galería de las Escaleras,<br> San Fernando, Prov. de Buenos Aires.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-regular fa-clock"></i></div>
+                        <div class="info-data">
+                            <h4>Horarios</h4>
+                            <p>Lunes a Sábado: 09:35 - 19:35 <br> Domingos: Cerrado</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-data">
+                            <h4>Teléfono / WhatsApp</h4>
+                            <p><a href="https://wa.me/5491163008169?text=Hola!%20Vengo%20desde%20la%20pagina%20web" target="_blank" class="contact-link">011 6300-8169</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7505672851413!2d-58.56401992383838!3d-34.43751487301416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1b54c0bf66bdd25%3A0x52736f5720216cca!2sEn%20un%20toque%20Reparaci%C3%B3nes.!5e0!3m2!1ses!2sar!4v1711833503253!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">En un toque</span>
+                    </div>
+                </a>
+                <p>Especialistas en recuperación y estética de dispositivos móviles en la zona norte.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#resenas">Reseñas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 En un toque Reparaciones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5491163008169?text=Hola!%20Necesito%20una%20consulta%20para%20reparar%20mi%20celular." class="whatsapp-float" target="_blank" aria-label="Escribinos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip-wsp">¡Consultanos!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
