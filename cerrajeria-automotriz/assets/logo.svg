@@ -1,0 +1,25 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yellow Background -->
+  <circle cx="250" cy="250" r="230" fill="#FFD700" stroke="black" stroke-width="8"/>
+  <circle cx="250" cy="250" r="220" fill="transparent" stroke="black" stroke-width="2"/>
+  
+  <!-- Horizontal Bar (Lens shape) -->
+  <path d="M 80 250 Q 250 200 420 250 Q 250 300 80 250" fill="black" />
+  
+  <!-- OSCAR Text -->
+  <text x="250" y="268" font-family="'Arial Black', sans-serif" font-weight="900" font-size="65" fill="white" text-anchor="middle" letter-spacing="2">OSCAR</text>
+  
+  <!-- Curved Text Paths -->
+  <path id="topPath" d="M 100 200 A 180 180 0 0 1 400 200" fill="transparent" />
+  <path id="bottomPath" d="M 100 300 A 180 180 0 0 0 400 300" fill="transparent" />
+  
+  <!-- CERRAJERIA -->
+  <text font-family="'Arial Black', sans-serif" font-weight="900" font-size="44" fill="black">
+    <textPath href="#topPath" startOffset="50%" text-anchor="middle">CERRAJERIA</textPath>
+  </text>
+  
+  <!-- AUTOMOTRIZ -->
+  <text font-family="'Arial Black', sans-serif" font-weight="900" font-size="40" fill="black">
+    <textPath href="#bottomPath" startOffset="50%" text-anchor="middle">AUTOMOTRIZ</textPath>
+  </text>
+</svg>
