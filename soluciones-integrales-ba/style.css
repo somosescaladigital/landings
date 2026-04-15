@@ -876,3 +876,19 @@ img.img-responsive {
     .swiper-button-next { right: 2px; }
     .swiper-button-prev { left: 2px; }
 }
+
+/* Reveal Animation */
+.service-card,
+.presentation-image,
+.presentation-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card.visible,
+.presentation-image.visible,
+.presentation-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
