@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply scroll reveal classes
+    // Apply scroll reveal classes (excluding gallery items to avoid slider conflicts)
     document.querySelectorAll('.service-card, .presentation-image, .presentation-content').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -72,11 +72,72 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Helper for visual feedback
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.visible').forEach(el => {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-        });
+    // Swiper Initialization
+    const swiper = new Swiper('.gallery-slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        },
     });
+
+    // Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
+    // Use event delegation for gallery items (handles Swiper clones)
+    document.querySelector('.gallery-slider').addEventListener('click', (e) => {
+        const galleryItem = e.target.closest('.gallery-item');
+        if (galleryItem) {
+            const img = galleryItem.querySelector('img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+            lightboxCaption.innerHTML = '';
+            document.body.style.overflow = 'hidden';
+        }
+    });
+
+    const closeLightbox = () => {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scroll
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Close on click outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Esc key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.style.display === 'block') {
+            closeLightbox();
+        }
+    });
+
+    // Helper for scroll reveal
+    // The CSS handles the transition when the .visible class is added by the observer
 });
