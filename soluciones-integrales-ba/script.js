@@ -70,10 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Swiper Initialization
+    console.log("Iniciando Swiper...");
     const swiper = new Swiper('.gallery-slider', {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
+        observer: true, 
+        observeParents: true,
+        watchOverflow: true,
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -95,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         },
     });
+    console.log("Swiper inicializado:", swiper);
 
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');
