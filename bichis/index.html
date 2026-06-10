@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bichis – Peluquería Canina & Pet Shop | Tigre, Buenos Aires</title>
+  <meta name="description" content="La peluquería canina y pet shop más querida de Tigre. 4.9 estrellas, más de 1200 mascotas atendidas. Turno por WhatsApp. Av. Dardo Rocha 1414, Tigre." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5491130738423?text=Hola!%20Vi%20la%20web%20y%20quiero%20sacar%20un%20turno%20para%20mi%20mascota%20🐾" 
+     class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Sacar Turno</span>
+  </a>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-paw">🐾</span>
+        <span class="logo-text">Bi<strong>chis</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#antes-despues">Antes/Después</a></li>
+        <li><a href="#precio">Precio</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20sacar%20un%20turno%20🐾" 
+         class="btn-nav" target="_blank">📅 Reservar Turno</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#servicios" class="mm-link">Servicios</a></li>
+      <li><a href="#galeria" class="mm-link">Galería</a></li>
+      <li><a href="#antes-despues" class="mm-link">Antes/Después</a></li>
+      <li><a href="#precio" class="mm-link">Precio</a></li>
+      <li><a href="#resenas" class="mm-link">Reseñas</a></li>
+      <li><a href="#contacto" class="mm-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="paws-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge animate-in">⭐ 4.9 · 86 reseñas en Google</div>
+      <h1 class="hero-title animate-in delay-1">
+        Tu mejor amigo<br/>
+        <span class="gradient-text">merece lo mejor</span>
+      </h1>
+      <p class="hero-subtitle animate-in delay-2">
+        Peluquería canina profesional & pet shop en Tigre.<br/>
+        Más de <strong id="hero-counter">0</strong> mascotas felices y contando 🐶
+      </p>
+      <div class="hero-ctas animate-in delay-3">
+        <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20sacar%20un%20turno%20para%20mi%20perro%20🐾" 
+           class="btn-primary" target="_blank" id="hero-cta-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Sacar turno por WhatsApp
+        </a>
+        <a href="#precio" class="btn-secondary" id="hero-cta-price">
+          💰 Ver precios
+        </a>
+      </div>
+    </div>
+    <div class="hero-image animate-in delay-2">
+      <div class="hero-img-wrapper">
+        <img src="img/hero.png" alt="Perro feliz en Bichis" id="hero-img" />
+        <div class="hero-badge-float">
+          <span>🏆</span>
+          <div>
+            <strong>#1 en Tigre</strong>
+            <small>Peluquería canina</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Deslizá para explorar</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number" data-target="1200" data-suffix="+">0</span>
+        <span class="stat-label">Mascotas atendidas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="4.9" data-suffix="⭐">0</span>
+        <span class="stat-label">Rating Google</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="86" data-suffix="">0</span>
+        <span class="stat-label">Reseñas 5 estrellas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="8" data-suffix=" años">0</span>
+        <span class="stat-label">De experiencia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Qué ofrecemos?</span>
+        <h2 class="section-title">Servicios con <span class="gradient-text">amor y profesionalismo</span></h2>
+        <p class="section-sub">Todo lo que tu mascota necesita, en un solo lugar</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="srv-bano">
+          <div class="service-icon">🛁</div>
+          <h3>Baño & Secado</h3>
+          <p>Shampoo hipoalergénico, secado profesional y perfume especial para mascotas.</p>
+          <span class="service-tag">Disponible</span>
+        </div>
+        <div class="service-card featured" id="srv-corte">
+          <div class="service-icon">✂️</div>
+          <h3>Peluquería & Corte</h3>
+          <p>Corte a tijera y máquina según la raza. Arreglo de orejas, patas y cola incluido.</p>
+          <span class="service-tag popular">⭐ Más pedido</span>
+        </div>
+        <div class="service-card" id="srv-sanitario">
+          <div class="service-icon">🦷</div>
+          <h3>Higiene Sanitaria</h3>
+          <p>Limpieza de oídos, corte de uñas, higiene dental y vaciado de glándulas.</p>
+          <span class="service-tag">Disponible</span>
+        </div>
+        <div class="service-card" id="srv-petshop">
+          <div class="service-icon">🏪</div>
+          <h3>Pet Shop</h3>
+          <p>Alimentos premium, accesorios, ropa, juguetes y todo para consentir a tu perro.</p>
+          <span class="service-tag">Disponible</span>
+        </div>
+        <div class="service-card" id="srv-delivery">
+          <div class="service-icon">🚚</div>
+          <h3>Entrega a Domicilio</h3>
+          <p>Pedí los productos del pet shop y te los llevamos a tu puerta en Tigre y alrededores.</p>
+          <span class="service-tag">Disponible</span>
+        </div>
+        <div class="service-card" id="srv-retiro">
+          <div class="service-icon">🏠</div>
+          <h3>Retiro en Puerta</h3>
+          <p>Pasá a buscar tu pedido sin bajarte del auto. Rápido y cómodo para vos.</p>
+          <span class="service-tag">Disponible</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES / DESPUÉS SLIDER -->
+  <section class="section dark-section" id="antes-despues">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag light">Resultados reales</span>
+        <h2 class="section-title light">Antes & <span class="gradient-text">Después</span></h2>
+        <p class="section-sub light">Arrastrá el slider para ver la transformación 🪄</p>
+      </div>
+      <div class="slider-container" id="comparison-slider">
+        <div class="slider-before">
+          <img src="img/before.png" alt="Antes del baño y corte" />
+          <span class="slider-label">ANTES</span>
+        </div>
+        <div class="slider-after">
+          <img src="img/after.png" alt="Después del baño y corte" />
+          <span class="slider-label right">DESPUÉS</span>
+        </div>
+        <div class="slider-handle" id="slider-handle">
+          <div class="handle-line"></div>
+          <div class="handle-circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5l-7 7 7 7M16 5l7 7-7 7"/>
+            </svg>
+          </div>
+          <div class="handle-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros clientes</span>
+        <h2 class="section-title">La galería de los <span class="gradient-text">más bonitos</span></h2>
+        <p class="section-sub">Hacé clic en la foto para verla en detalle</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" id="gal-1" onclick="openLightbox(0)">
+          <img src="img/gallery1.png" alt="Poodle arreglado en Bichis" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>🔍 Ver foto</span>
+          </div>
+        </div>
+        <div class="gallery-item tall" id="gal-2" onclick="openLightbox(1)">
+          <img src="img/gallery2.png" alt="Shih tzu arreglado en Bichis" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>🔍 Ver foto</span>
+          </div>
+        </div>
+        <div class="gallery-item" id="gal-3" onclick="openLightbox(2)">
+          <img src="img/gallery3.png" alt="Pastor alemán arreglado en Bichis" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>🔍 Ver foto</span>
+          </div>
+        </div>
+        <div class="gallery-item wide" id="gal-4" onclick="openLightbox(3)">
+          <img src="img/hero.png" alt="Golden retriever en Bichis" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>🔍 Ver foto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" onclick="prevPhoto(event)" aria-label="Anterior">‹</button>
+    <img src="" alt="" id="lightbox-img" />
+    <button class="lightbox-next" onclick="nextPhoto(event)" aria-label="Siguiente">›</button>
+  </div>
+
+  <!-- CALCULADORA DE PRECIO -->
+  <section class="section bg-section" id="precio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Calculadora</span>
+        <h2 class="section-title">¿Cuánto sale el <span class="gradient-text">baño de tu perro?</span></h2>
+        <p class="section-sub">Completá los datos y te damos un presupuesto orientativo al instante</p>
+      </div>
+      <div class="calculator-wrapper">
+        <div class="calc-card">
+          <div class="calc-field">
+            <label for="dog-size">Tamaño del perro</label>
+            <div class="size-selector">
+              <button class="size-btn active" data-size="small" id="size-small">
+                <span class="size-emoji">🐕‍🦺</span>
+                <span>Pequeño</span>
+                <small>hasta 10kg</small>
+              </button>
+              <button class="size-btn" data-size="medium" id="size-medium">
+                <span class="size-emoji">🐕</span>
+                <span>Mediano</span>
+                <small>10–25kg</small>
+              </button>
+              <button class="size-btn" data-size="large" id="size-large">
+                <span class="size-emoji">🦮</span>
+                <span>Grande</span>
+                <small>+25kg</small>
+              </button>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label>Tipo de pelo</label>
+            <div class="toggle-group">
+              <button class="toggle-btn active" data-coat="short" id="coat-short">Corto / liso</button>
+              <button class="toggle-btn" data-coat="medium" id="coat-medium">Mediano</button>
+              <button class="toggle-btn" data-coat="long" id="coat-long">Largo / rizado</button>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label>Servicios</label>
+            <div class="checkbox-group">
+              <label class="check-item">
+                <input type="checkbox" id="chk-bath" checked />
+                <span class="check-box"></span>
+                Baño & Secado
+              </label>
+              <label class="check-item">
+                <input type="checkbox" id="chk-cut" />
+                <span class="check-box"></span>
+                Corte de pelo
+              </label>
+              <label class="check-item">
+                <input type="checkbox" id="chk-nails" />
+                <span class="check-box"></span>
+                Corte de uñas
+              </label>
+              <label class="check-item">
+                <input type="checkbox" id="chk-ears" />
+                <span class="check-box"></span>
+                Limpieza de oídos
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="result-card">
+            <div class="result-header">Tu presupuesto estimado</div>
+            <div class="result-price" id="result-price">$0</div>
+            <div class="result-note">* Precio orientativo en pesos argentinos. El precio final puede variar según el estado del pelaje.</div>
+            <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20un%20presupuesto%20para%20mi%20mascota%20🐾" 
+               class="btn-primary full" target="_blank" id="calc-wa-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Confirmar por WhatsApp
+            </a>
+          </div>
+          <div class="schedule-card">
+            <h4>📅 Horarios de atención</h4>
+            <div class="schedule-list">
+              <div class="schedule-row"><span>Lunes a Viernes</span><strong>9:00 – 18:00</strong></div>
+              <div class="schedule-row"><span>Sábados</span><strong>9:00 – 14:00</strong></div>
+              <div class="schedule-row closed"><span>Domingos</span><strong>Cerrado</strong></div>
+            </div>
+            <p class="schedule-note">Hoy abrimos a las 17:00 hs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="section dark-section" id="resenas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag light">Lo que dicen de nosotros</span>
+        <h2 class="section-title light">Reseñas de <span class="gradient-text">clientes reales</span></h2>
+        <div class="rating-big">
+          <span class="rating-number">4.9</span>
+          <div class="rating-stars">★★★★★</div>
+          <span class="rating-count">86 reseñas en Google</span>
+        </div>
+      </div>
+      <div class="reviews-carousel" id="reviews-carousel">
+        <div class="review-card active" id="rev-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"El mejor lugar para llevar a mi perro. Los chicos son muy cariñosos y mi Laika siempre sale hermosa. Ya llevamos 3 años yendo y nunca nos fallaron!"</p>
+          <div class="review-author">
+            <div class="review-avatar">ML</div>
+            <div>
+              <strong>María Laura G.</strong>
+              <small>hace 2 semanas · Google</small>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" id="rev-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excelente atención, muy profesionales. Llevé a mi beagle por primera vez y quedó impecable. El precio es muy accesible y la atención de primera."</p>
+          <div class="review-author">
+            <div class="review-avatar">RR</div>
+            <div>
+              <strong>Roberto R.</strong>
+              <small>hace 1 mes · Google</small>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" id="rev-3">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Mi shih tzu adora ir a Bichis. Se nota que aman a los animales. Súper recomendado para quienes viven en Tigre y alrededores."</p>
+          <div class="review-author">
+            <div class="review-avatar">SP</div>
+            <div>
+              <strong>Sofía P.</strong>
+              <small>hace 3 semanas · Google</small>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" id="rev-4">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fui al pet shop y encontré todo lo que buscaba a buen precio. Además pregunté por el servicio de peluquería y quedé encantada. ¡Ya saqué turno!"</p>
+          <div class="review-author">
+            <div class="review-avatar">CL</div>
+            <div>
+              <strong>Carolina L.</strong>
+              <small>hace 1 mes · Google</small>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" id="rev-5">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Muy buena atención, rápidos y cuidadosos. Mi perro grande siempre queda perfecto. El local es limpio y cómodo. 100% recomendado."</p>
+          <div class="review-author">
+            <div class="review-avatar">JM</div>
+            <div>
+              <strong>Juan M.</strong>
+              <small>hace 2 meses · Google</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-controls">
+        <button class="rev-btn" id="rev-prev" onclick="prevReview()" aria-label="Anterior">‹</button>
+        <div class="rev-dots" id="rev-dots"></div>
+        <button class="rev-btn" id="rev-next" onclick="nextReview()" aria-label="Siguiente">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TURNO RÁPIDO / CTA -->
+  <section class="section cta-section" id="turno">
+    <div class="container">
+      <div class="cta-wrapper">
+        <div class="cta-text">
+          <h2>¿Listo para sacar<br/><span class="gradient-text">el turno de tu perro?</span></h2>
+          <p>Respondemos en minutos por WhatsApp. ¡Te esperamos!</p>
+          <div class="cta-badges">
+            <span>🏳️‍🌈 Amigable LGBTQ+</span>
+            <span>📦 Entrega a domicilio</span>
+            <span>🚗 Retiro en puerta</span>
+          </div>
+        </div>
+        <div class="cta-widget">
+          <div class="widget-card">
+            <div class="widget-title">📱 Turno rápido</div>
+            <div class="turno-options">
+              <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20turno%20para%20Ba%C3%B1o%20y%20Secado%20🛁" 
+                 class="turno-opt" target="_blank" id="turno-bath">🛁 Baño & Secado</a>
+              <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20turno%20para%20Peluquer%C3%ADa%20%E2%9C%82%EF%B8%8F" 
+                 class="turno-opt" target="_blank" id="turno-cut">✂️ Peluquería</a>
+              <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20turno%20para%20Ba%C3%B1o%20%2B%20Corte%20completo%20🐾" 
+                 class="turno-opt featured" target="_blank" id="turno-full">🐾 Baño + Corte completo</a>
+              <a href="https://wa.me/5491130738423?text=Hola!%20Quiero%20info%20del%20pet%20shop%20🏪" 
+                 class="turno-opt" target="_blank" id="turno-shop">🏪 Pet Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA Y CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Dónde estamos?</span>
+        <h2 class="section-title">Encontranos en <span class="gradient-text">Tigre</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item" id="cnt-address">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Av. Dardo Rocha 1414, B1648 Tigre<br/>Provincia de Buenos Aires</p>
+              <a href="https://maps.google.com/?q=Chacabuco+847+Tigre+Buenos+Aires" 
+                 target="_blank" class="link-arrow">Cómo llegar →</a>
+            </div>
+          </div>
+          <div class="contact-item" id="cnt-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <p>011 3073-8423</p>
+              <a href="tel:+5491130738423" class="link-arrow">Llamar ahora →</a>
+            </div>
+          </div>
+          <div class="contact-item" id="cnt-wa">
+            <div class="contact-icon">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>Respondemos todos los días</p>
+              <a href="https://wa.me/5491130738423" target="_blank" class="link-arrow">Abrir chat →</a>
+            </div>
+          </div>
+          <div class="contact-item" id="cnt-hours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Horarios</strong>
+              <p>Lun–Vie: 9:00 a 18:00<br/>Sábados: 9:00 a 14:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrapper" id="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9!2d-58.5793!3d-34.4267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f0a5ee5e5e5%3A0x0!2sChacabuco%20847%2C%20Tigre%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Bichis en Tigre">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-paw">🐾</span>
+        <span class="logo-text">Bi<strong>chis</strong></span>
+        <p>Peluquería canina & pet shop<br/>con amor en Tigre, Buenos Aires</p>
+      </div>
+      <div class="footer-links">
+        <h5>Servicios</h5>
+        <a href="#servicios">Baño & Secado</a>
+        <a href="#servicios">Peluquería</a>
+        <a href="#servicios">Pet Shop</a>
+        <a href="#servicios">Entrega a domicilio</a>
+      </div>
+      <div class="footer-links">
+        <h5>Contacto</h5>
+        <a href="tel:+5491130738423">011 3073-8423</a>
+        <a href="https://wa.me/5491130738423" target="_blank">WhatsApp</a>
+        <a href="https://maps.google.com/?q=Chacabuco+847+Tigre" target="_blank">Cómo llegar</a>
+      </div>
+      <div class="footer-social">
+        <h5>Seguinos</h5>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5491130738423" target="_blank" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bichis Peluquería Canina & Pet Shop · Tigre, Buenos Aires 🐾</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
