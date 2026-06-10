@@ -1269,16 +1269,39 @@ body {
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 1024px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
+  /* --- HERO TABLET --- */
+  .hero {
+    padding: 100px 24px 80px;
+    align-items: flex-start;
   }
-  .hero-image { grid-column: 1; grid-row: auto; }
-  .hero-content > *:not(.hero-image) { grid-column: 1; }
-  .hero-ctas { justify-content: center; }
-  .hero-subtitle { margin: 0 auto; }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    width: 100%;
+  }
   .hero-badge { margin: 0 auto; }
+  .hero-title { font-size: clamp(2.2rem, 6vw, 3.2rem); letter-spacing: -1px; }
+  .hero-subtitle { margin: 0 auto; }
+  .hero-ctas { justify-content: center; }
 
+  .hero-image {
+    order: -1;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  #hero-img { height: 300px; }
+  .hero-badge-float {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16px;
+    white-space: nowrap;
+  }
+
+  /* --- OTHER SECTIONS --- */
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .calculator-wrapper { grid-template-columns: 1fr; }
   .cta-wrapper { grid-template-columns: 1fr; gap: 40px; }
@@ -1288,30 +1311,154 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* --- NAV --- */
   .nav-links, .btn-nav { display: none; }
   .hamburger { display: flex; }
-  .services-grid { grid-template-columns: 1fr; }
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
+
+  /* --- HERO MOBILE --- */
+  .hero {
+    padding: 88px 20px 72px;
+    min-height: 100svh;
   }
-  .gallery-item.wide { grid-column: span 2; }
-  .gallery-item.tall { grid-row: auto; }
-  .stats-inner { flex-wrap: wrap; }
+  .hero-content {
+    gap: 20px;
+  }
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    letter-spacing: -1px;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 24px;
+    font-size: 0.95rem;
+  }
+
+  /* Hero image — smaller, circular, no blob overflow */
+  .hero-image {
+    max-width: 220px;
+    order: -1;
+  }
+  #hero-img {
+    height: 220px;
+  }
+  .hero-img-wrapper::before,
+  .hero-img-wrapper::after { display: none; }
+  #hero-img {
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 40px rgba(249,115,22,0.25);
+    animation: none;
+  }
+  .hero-badge-float {
+    position: static;
+    transform: none;
+    animation: none;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 0.82rem;
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .hero-badge-float span { font-size: 20px; }
+
+  /* --- STATS --- */
+  .stats-inner { flex-wrap: wrap; justify-content: center; }
   .stat-divider { display: none; }
-  .stat-item { width: 50%; padding: 24px 16px; }
-  .checkbox-group { grid-template-columns: 1fr; }
-  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .stat-item { width: 50%; padding: 20px 12px; }
+  .stat-number { font-size: 2rem; }
+
+  /* --- SERVICES --- */
+  .services-grid { grid-template-columns: 1fr; gap: 14px; }
+  .service-card { padding: 24px 20px; }
+
+  /* --- SLIDER --- */
+  .slider-container { border-radius: var(--radius); }
+
+  /* --- GALLERY --- */
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .gallery-item.wide { grid-column: span 2; }
+  .gallery-item.tall { grid-row: auto; aspect-ratio: 1; }
+
+  /* --- CALCULATOR --- */
+  .calc-card { padding: 24px 20px; gap: 24px; }
+  .size-selector { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .size-btn { padding: 14px 8px; }
+  .size-btn .size-emoji { font-size: 1.5rem; }
+  .toggle-group { gap: 8px; }
+  .toggle-btn { padding: 8px 14px; font-size: 0.85rem; }
+  .checkbox-group { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .result-card { padding: 28px 20px; }
+  .result-price { font-size: 2.8rem; }
+
+  /* --- REVIEWS --- */
+  .review-card { padding: 28px 24px; }
+  .review-text { font-size: 0.95rem; }
+  .rating-big { gap: 8px; }
+  .rating-number { font-size: 2.5rem; }
+
+  /* --- CTA --- */
+  .cta-wrapper { gap: 32px; }
+  .cta-text h2 { font-size: 1.8rem; letter-spacing: -1px; }
+  .cta-badges { flex-wrap: wrap; gap: 8px; }
+  .cta-badges span { font-size: 0.8rem; padding: 6px 12px; }
+  .turno-opt { padding: 14px 16px; font-size: 0.9rem; }
+  .widget-card { padding: 24px 20px; }
+
+  /* --- CONTACT --- */
+  .contact-item { padding: 16px 18px; }
+  .map-wrapper { min-height: 260px; }
+
+  /* --- FOOTER --- */
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
+  .footer { padding: 48px 20px 0; }
+
+  /* --- FLOATING WA --- */
+  .wa-float { bottom: 20px; right: 20px; }
   .wa-float span { display: none; }
   .wa-float { padding: 16px; border-radius: 50%; }
-  .size-selector { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 480px) {
-  .section { padding: 60px 0; }
+  .section { padding: 56px 0; }
+  .section-title { font-size: 1.7rem; }
+  .section-sub { font-size: 0.9rem; }
+
+  /* Hero full fix on small phones */
   .hero { padding: 80px 16px 60px; }
+  .hero-image { max-width: 180px; }
+  #hero-img { height: 180px; }
+  .hero-title { font-size: 1.9rem; }
+
+  /* Gallery single column */
   .gallery-grid { grid-template-columns: 1fr; }
-  .gallery-item.wide, .gallery-item.tall { grid-column: auto; grid-row: auto; }
-  .cta-badges { flex-direction: column; }
+  .gallery-item.wide,
+  .gallery-item.tall { grid-column: auto; grid-row: auto; aspect-ratio: 4/3; }
+
+  /* Calc */
+  .checkbox-group { grid-template-columns: 1fr; }
+  .size-btn small { display: none; }
+
+  /* CTA */
+  .cta-badges { flex-direction: column; align-items: flex-start; }
+  .cta-text h2 { font-size: 1.6rem; }
+
+  /* Footer */
+  .footer-bottom p { font-size: 0.78rem; }
 }
 
 @keyframes fadeIn {
