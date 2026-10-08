@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <!-- EDITAR: completar con datos reales -->
+  <title>Od. Romi Logullo | Consultorio Odontológico</title>
+  <meta name="description" content="Consultorio odontológico de Romi Logullo. Atención personalizada, cálida y sin dolor. Pedí tu turno por WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  <!-- EDITAR: canonical con dominio real -->
+  <link rel="canonical" href="https://odromillogullo.com.ar/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Od. Romi Logullo | Consultorio Odontológico" />
+  <meta property="og:description" content="Atención odontológica personalizada. Turnos por WhatsApp." />
+  <!-- EDITAR: canonical URL real -->
+  <meta property="og:url"         content="https://odromillogullo.com.ar/" />
+  <meta property="og:locale"      content="es_AR" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f0d0d'/%3E%3Cpath d='M16 6c-1.2 0-2.3.7-2.9 1.7C12.2 7 11 6.6 9.8 7.1 8.2 7.7 7.4 9.4 7.8 11.1c.2.7.5 1.2.9 1.7C7.5 14 7.3 15.2 7.8 16.5c.6 1.8 2.5 2.8 4.3 2.2.3-.1.6-.2.9-.5.4.3.9.5 1.4.5s1-.2 1.4-.5c.3.2.6.4.9.5 1.8.6 3.7-.4 4.3-2.2.5-1.3.2-2.5-.7-3.3.4-.5.7-.9.9-1.5.4-1.7-.6-3.4-2-3.9-1.2-.4-2.4 0-3.3.6C17.1 6.7 16.6 6 16 6z' fill='%232eb87a'/%3E%3C/svg%3E" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Consultorio Odontológico Od. Romi Logullo",
+    "description": "Atención odontológica personalizada, cálida y sin dolor.",
+    "url": "https://odromillogullo.com.ar/"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       NAVEGACIÓN
+  ══════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" id="nav" aria-label="Menú principal">
+      <div class="container nav__inner">
+
+        <a href="#inicio" class="nav__logo" aria-label="Ir al inicio">
+          <span class="nav__logo-name">Romi Logullo</span>
+          <span class="nav__logo-title">Odontóloga</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Mi enfoque</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div style="display:flex; align-items:center; gap:.75rem;">
+          <!-- EDITAR: número WhatsApp -->
+          <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+pedir+un+turno" target="_blank" rel="noopener" class="nav__cta-btn" id="nav-cta">
+            Pedir Turno
+          </a>
+          <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Menú mobile -->
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navegación">
+      <button class="nav__mobile-close" id="mobile-close" aria-label="Cerrar menú">✕</button>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Mi enfoque</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <!-- EDITAR: número WhatsApp -->
+      <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+pedir+un+turno" target="_blank" rel="noopener" class="btn btn--coral">Pedir Turno</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════
+         HERO — Split screen editorial
+    ══════════════════════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-label="Inicio">
+
+      <!-- Col izquierda: texto -->
+      <div class="hero__left">
+        <span class="hero__eyebrow">Consultorio Odontológico</span>
+
+        <h1 class="hero__title">
+          Una sonrisa que<br>
+          <em>te representa</em>
+        </h1>
+
+        <p class="hero__desc">
+          Atención odontológica integral con un trato personalizado y sin apuro.
+          Porque cada boca es única y merece cuidado a la medida.
+        </p>
+
+        <div class="hero__actions">
+          <!-- EDITAR: número WhatsApp -->
+          <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+pedir+un+turno" class="btn btn--coral" target="_blank" rel="noopener" id="hero-wa">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedí tu turno
+          </a>
+          <a href="#servicios" class="btn btn--ghost" id="hero-servicios">
+            Ver servicios
+          </a>
+        </div>
+
+        <!-- Rating pill (opcional — completar con datos reales si los tiene) -->
+        <!--
+        <div class="rating-pill">
+          <div class="stars" aria-label="5 estrellas">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          ★ 5.0 Google · XX reseñas
+        </div>
+        -->
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+          <div class="hero__scroll-line"></div>
+          <span>scroll</span>
+        </div>
+      </div>
+
+      <!-- Col derecha: imagen editorial -->
+      <div class="hero__right">
+        <img
+          src="assets/romi.webp"
+          alt="Od. Romi Logullo — odontóloga"
+          class="hero__img"
+          width="900" height="1200"
+          fetchpriority="high"
+        />
+        <!-- Badge flotante sobre la imagen -->
+        <div class="hero__float-badge">
+          <div class="hero__float-badge-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <div class="hero__float-badge-text">
+            <strong>Atención sin dolor</strong>
+            <span>Técnica suave y cuidadosa</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE — franja animada
+    ══════════════════════════════════════════════════════ -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><span class="dot"></span> Odontología general</span>
+        <span class="marquee-item"><span class="dot"></span> Blanqueamiento dental</span>
+        <span class="marquee-item"><span class="dot"></span> Ortodoncia</span>
+        <span class="marquee-item"><span class="dot"></span> Odontopediatría</span>
+        <span class="marquee-item"><span class="dot"></span> Prótesis</span>
+        <span class="marquee-item"><span class="dot"></span> Urgencias</span>
+        <span class="marquee-item"><span class="dot"></span> Trato personalizado</span>
+        <span class="marquee-item"><span class="dot"></span> Sin dolor</span>
+        <span class="marquee-item"><span class="dot"></span> Turnos disponibles</span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIOS — Bento Grid
+    ══════════════════════════════════════════════════════ -->
+    <section class="section section--surface" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <span class="eyebrow reveal">Lo que hago</span>
+        <h2 class="section-title reveal" id="servicios-title">Tratamientos<br>para cada sonrisa</h2>
+
+        <div class="bento">
+
+          <!-- Tile grande acento - Prevención -->
+          <article class="tile tile--w4 tile--accent reveal" style="transition-delay:.05s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div>
+            <span class="tile__tag">Prioridad</span>
+            <h3 class="tile__title">Prevención</h3>
+            <p class="tile__desc">Revisaciones, limpieza profesional y detección temprana. La base de una boca sana.</p>
+            <div class="tile__number">01</div>
+          </article>
+
+          <!-- Blanqueamiento -->
+          <article class="tile tile--w4 reveal" style="transition-delay:.1s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></div>
+            <span class="tile__tag">Estética</span>
+            <h3 class="tile__title">Blanqueamiento</h3>
+            <p class="tile__desc">Recuperá la blancura natural de tus dientes con tratamientos seguros y con resultados visibles desde la primera sesión.</p>
+            <div class="tile__number">02</div>
+          </article>
+
+          <!-- Ortodoncia -->
+          <article class="tile tile--w4 reveal" style="transition-delay:.15s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 8V6a2 2 0 014 0v2M13 8V6a2 2 0 014 0v2"/></svg></div>
+            <span class="tile__tag">Alineación</span>
+            <h3 class="tile__title">Ortodoncia</h3>
+            <p class="tile__desc">Brackets y aparatología para alinear tu sonrisa y mejorar la mordida en niños y adultos.</p>
+            <div class="tile__number">03</div>
+          </article>
+
+          <!-- CTA tile ancho -->
+          <div class="tile tile--w8 tile--dark-accent tile--cta reveal" style="transition-delay:.2s">
+            <div>
+              <p style="font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--coral); font-weight:700; margin-bottom:.6rem;">¿Primera vez?</p>
+              <p class="tile__title" style="margin-bottom:.4rem;">Primera consulta sin cargo</p>
+              <p class="tile__desc">Evaluación inicial gratuita para que conozcas el consultorio y podamos planificar juntas tu tratamiento.</p>
+            </div>
+            <!-- EDITAR: número WhatsApp -->
+            <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+hacer+una+consulta+inicial" class="btn btn--coral" target="_blank" rel="noopener" id="tile-cta-wa" style="white-space:nowrap; flex-shrink:0;">
+              Reservar
+            </a>
+          </div>
+
+          <!-- Score Google -->
+          <!-- EDITAR: descomentar y completar si tiene reseñas en Google -->
+          <!--
+          <div class="tile tile--w4 tile--score reveal" style="transition-delay:.2s">
+            <div class="big-stars" aria-label="5 estrellas en Google">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="big-number">5.0</p>
+            <p class="score-label">XX reseñas en Google</p>
+          </div>
+          -->
+
+          <!-- Odontopediatría -->
+          <article class="tile tile--w4 reveal" style="transition-delay:.25s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5v1a5 5 0 01-10 0V7a5 5 0 015-5z"/><path d="M3 21v-1a7 7 0 0114 0v1"/></svg></div>
+            <span class="tile__tag">Niños</span>
+            <h3 class="tile__title">Odontopediatría</h3>
+            <p class="tile__desc">Atención especializada para los más chicos. Un espacio amigable donde el dentista no da miedo.</p>
+            <div class="tile__number">04</div>
+          </article>
+
+          <!-- Odontología general -->
+          <article class="tile tile--w4 reveal" style="transition-delay:.3s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div>
+            <span class="tile__tag">General</span>
+            <h3 class="tile__title">Odontología General</h3>
+            <p class="tile__desc">Obturaciones, extracciones y tratamientos de conducto. Todo lo que tu boca necesita en un solo lugar.</p>
+            <div class="tile__number">05</div>
+          </article>
+
+          <!-- Urgencias -->
+          <article class="tile tile--w4 reveal" style="transition-delay:.35s">
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <span class="tile__tag">Urgencias</span>
+            <h3 class="tile__title">Atención de Urgencias</h3>
+            <p class="tile__desc">¿Dolor o fractura inesperada? Escribime y nos organizamos para atenderte lo antes posible.</p>
+            <div class="tile__number">06</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MI ENFOQUE — About
+    ══════════════════════════════════════════════════════ -->
+    <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container">
+        <div class="about__grid">
+
+          <!-- Imagen -->
+          <div class="about__visual reveal-left">
+            <div class="about__img-frame">
+              <img
+                src="assets/romi.webp"
+                alt="Od. Romi Logullo en su consultorio"
+                width="900" height="1200"
+                loading="lazy"
+              />
+            </div>
+            <!-- EDITAR: completar con dato real si corresponde -->
+            <div class="about__badge" aria-label="Atención personalizada">
+              <strong>100%</strong>
+              <span>Personalizada</span>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="reveal-right">
+            <span class="eyebrow">Mi enfoque</span>
+            <h2 class="section-title" id="nosotros-title">
+              Odontología con<br>
+              <em style="font-family:var(--font-display); font-style:italic; color:var(--coral)">alma de barrio</em>
+            </h2>
+            <p class="section-sub" style="margin-bottom:0">
+              Creo que una buena atención empieza por escuchar. Antes de cualquier tratamiento, tomo el tiempo que sea necesario para entender qué necesitás y cómo te sentís. La confianza no se impone, se construye.
+            </p>
+
+            <div class="pillar-list" style="margin-top:2rem;">
+              <div class="pillar">
+                <span class="pillar__num">01</span>
+                <div class="pillar__text">
+                  <strong>Escucho antes de tratar</strong>
+                  <span>Cada paciente llega con su historia, sus miedos y sus objetivos. Empezamos por ahí.</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__num">02</span>
+                <div class="pillar__text">
+                  <strong>Sin dolores ni apuros</strong>
+                  <span>Trabajo a un ritmo que te resulte cómodo, con técnicas modernas que minimizan las molestias.</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__num">03</span>
+                <div class="pillar__text">
+                  <strong>Precios claros desde el inicio</strong>
+                  <span>Antes de empezar cualquier tratamiento te explico el costo y las opciones disponibles.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════════════ -->
+    <section class="section section--surface" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <span class="eyebrow reveal">FAQ</span>
+        <h2 class="section-title reveal" id="faq-title">Preguntas frecuentes</h2>
+
+        <div class="faq__grid">
+
+          <!-- Lista de preguntas -->
+          <div class="faq__list reveal">
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-1b" id="faq-1">
+                ¿Cómo pido un turno?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__body" id="faq-1b" role="region" aria-labelledby="faq-1">
+                <p class="faq-item__content">
+                  <!-- EDITAR: número WhatsApp -->
+                  La forma más rápida es por WhatsApp. También podés usar el formulario de contacto de esta página y te escribo a la brevedad.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-2b" id="faq-2">
+                ¿Atienden a niños?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__body" id="faq-2b" role="region" aria-labelledby="faq-2">
+                <p class="faq-item__content">Sí, atendemos niños desde temprana edad. El ambiente es cálido y sin apuros para que la primera experiencia en el dentista sea positiva.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-3b" id="faq-3">
+                ¿Trabajan con obra social?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__body" id="faq-3b" role="region" aria-labelledby="faq-3">
+                <!-- EDITAR: actualizar con coberturas reales -->
+                <p class="faq-item__content">Consultanos directamente, ya que las coberturas pueden variar. También atendemos de forma particular con precios transparentes.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-4b" id="faq-4">
+                ¿Qué pasa si tengo miedo al dentista?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__body" id="faq-4b" role="region" aria-labelledby="faq-4">
+                <p class="faq-item__content">Es más común de lo que pensás. Trabajamos con mucha paciencia y te explicamos cada paso antes de hacerlo. Nunca vas a sentir que te apuramos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-5b" id="faq-5">
+                ¿Cuánto dura el blanqueamiento?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__body" id="faq-5b" role="region" aria-labelledby="faq-5">
+                <p class="faq-item__content">El tiempo varía según el método y el estado de tu esmalte. En la consulta inicial te evaluamos y te explicamos cuál es el tratamiento ideal y cuánto llevaría.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Panel lateral FAQ -->
+          <div class="faq__info reveal" style="transition-delay:.15s">
+            <p class="faq__info-title">¿Tenés otra pregunta?</p>
+            <p>Escribime directamente por WhatsApp y te respondo en el momento. Sin formularios, sin esperas.</p>
+            <!-- EDITAR: número WhatsApp -->
+            <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+tengo+una+consulta" class="btn btn--coral" target="_blank" rel="noopener" id="faq-wa-btn" style="width:100%; justify-content:center;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Preguntar por WhatsApp
+            </a>
+
+            <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+              <!-- EDITAR: dirección e información de contacto real -->
+              <p style="font-size:.8rem; color:var(--cream-muted); line-height:1.7;">
+                📍 <!-- EDITAR: dirección del consultorio --><br>
+                📞 <!-- EDITAR: teléfono -->
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════════ -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <span class="eyebrow reveal">Contacto</span>
+        <h2 class="section-title reveal" id="contacto-title">Reservá tu turno</h2>
+
+        <div class="contacto__grid" style="margin-top:3rem;">
+
+          <!-- Info -->
+          <div class="contact-info reveal">
+
+            <div class="contact-row">
+              <div class="contact-row__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <p class="contact-row__label">Dirección</p>
+                <!-- EDITAR: dirección real del consultorio -->
+                <p class="contact-row__value"><!-- EDITAR: dirección --></p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-row__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.9 17.1l1.27-.84a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-row__label">WhatsApp / Teléfono</p>
+                <!-- EDITAR: número de teléfono -->
+                <p class="contact-row__value"><a href="tel:+549XXXXXXXXXX" style="color:var(--coral)"><!-- EDITAR: teléfono --></a></p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-row__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <p class="contact-row__label">Horarios</p>
+                <!-- EDITAR: horarios reales -->
+                <p class="contact-row__value">Consultá disponibilidad<br>por WhatsApp</p>
+              </div>
+            </div>
+
+            <!-- EDITAR: número WhatsApp -->
+            <a href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+pedir+un+turno" class="btn btn--wa" target="_blank" rel="noopener" id="contacto-wa" style="width:100%; justify-content:center; margin-top:.5rem;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Escribir por WhatsApp
+            </a>
+
+          </div>
+
+          <!-- Formulario -->
+          <div class="form-card reveal" style="transition-delay:.15s">
+            <p class="form-card__title">Mandame tu consulta</p>
+            <p class="form-card__sub">Completá el formulario y te respondo por WhatsApp.</p>
+
+            <form id="form-turno" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="f-nombre">Nombre *</label>
+                  <input class="form__input" type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="f-telefono">Teléfono</label>
+                  <input class="form__input" type="tel" id="f-telefono" name="telefono" placeholder="Tu número" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="f-servicio">¿Qué necesitás?</label>
+                <select class="form__select" id="f-servicio" name="servicio">
+                  <option value="">— Elegí una opción —</option>
+                  <option value="Turno de revisación">Turno de revisación</option>
+                  <option value="Urgencia dental">Urgencia dental</option>
+                  <option value="Blanqueamiento">Blanqueamiento</option>
+                  <option value="Ortodoncia">Ortodoncia</option>
+                  <option value="Odontopediatría">Odontopediatría (niños)</option>
+                  <option value="Prótesis">Prótesis</option>
+                  <option value="Consulta de precios">Consulta de precios</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="f-mensaje">Mensaje adicional</label>
+                <textarea class="form__textarea" id="f-mensaje" name="mensaje" placeholder="Contame más..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--coral" style="width:100%; justify-content:center;" id="form-submit">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Enviar por WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MAPA
+    ══════════════════════════════════════════════════════ -->
+    <!-- EDITAR: reemplazar src con el embed real de Google Maps del consultorio -->
+    <section class="mapa" id="mapa" aria-label="Ubicación en mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52614.9!2d-58.5!3d-34.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDMwJzAwLjAiUyA1OMKwMzAnMDAuMCJX!5e0!3m2!1ses-419!2sar!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación del consultorio Od. Romi Logullo"
+      ></iframe>
+    </section>
+
+  </main>
+
+  <!-- Botón flotante WhatsApp -->
+  <!-- EDITAR: número WhatsApp -->
+  <a
+    href="https://wa.me/549XXXXXXXXXX?text=Hola+Romi%2C+quisiera+pedir+un+turno"
+    class="float-wa"
+    target="_blank"
+    rel="noopener"
+    aria-label="Escribir por WhatsApp a Od. Romi Logullo"
+    id="float-wa"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        Romi Logullo
+        <span>Odontóloga</span>
+      </div>
+      <!-- EDITAR: dirección y teléfono real -->
+      <p class="footer__copy">
+        <!-- EDITAR: dirección -->&nbsp;·&nbsp;<!-- EDITAR: teléfono -->
+      </p>
+      <nav class="footer__links" aria-label="Links pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <!-- EDITAR: agregar política de privacidad si se sube a producción -->
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
