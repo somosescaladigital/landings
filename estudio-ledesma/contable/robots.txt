@@ -1,0 +1,5 @@
+# robots.txt - Estudio Ledesma & Asociados (Estudio Contable)
+User-agent: *
+Allow: /
+
+Sitemap: https://estudioledesma.com.ar/contable/sitemap.xml

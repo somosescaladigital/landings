@@ -1,0 +1,5 @@
+# robots.txt - Estudio Ledesma & Asociados (Estudio Jurídico)
+User-agent: *
+Allow: /
+
+Sitemap: https://estudioledesma.com.ar/juridico/sitemap.xml

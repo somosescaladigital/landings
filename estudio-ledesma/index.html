@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demos Estudio Ledesma & Asociados | Jurídico & Contable</title>
+  <meta name="description" content="Plantilla reutilizable y modular para estudios profesionales (jurídicos y contables) en Argentina.">
+  <link rel="icon" type="image/svg+xml" href="juridico/assets/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-iron: #141416;
+      --color-brick: #7c3520;
+      --color-amber: #d99424;
+      --color-travertine: #f8f5ef;
+      --color-border: #e6dfd1;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-travertine);
+      color: #1c1a17;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+      background-image: radial-gradient(circle at 50% 10%, rgba(217, 148, 36, 0.08) 0%, transparent 60%);
+    }
+    .hub-container {
+      max-width: 960px;
+      width: 100%;
+      text-align: center;
+    }
+    .hub-tag {
+      display: inline-block;
+      font-size: 0.785rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--color-brick);
+      background-color: #fbeee9;
+      border: 1px solid rgba(124, 53, 32, 0.2);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+    .hub-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 700;
+      color: var(--color-iron);
+      line-height: 1.18;
+      margin-bottom: 1rem;
+    }
+    .hub-desc {
+      font-size: 1.1rem;
+      color: #5e5a52;
+      max-width: 640px;
+      margin: 0 auto 3rem auto;
+      line-height: 1.65;
+    }
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      text-align: left;
+    }
+    @media (max-width: 768px) {
+      .hub-grid { grid-template-columns: 1fr; }
+    }
+    .demo-card {
+      background: #ffffff;
+      border: 2px solid var(--color-border);
+      border-radius: 18px;
+      padding: 2.5rem 2.25rem;
+      transition: all 0.28s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    .demo-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(20, 20, 22, 0.12);
+      border-color: var(--color-amber);
+    }
+    .demo-badge {
+      display: inline-block;
+      font-size: 0.725rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+      margin-bottom: 1.25rem;
+    }
+    .demo-card.juridico .demo-badge {
+      background: #fbeee9;
+      color: var(--color-brick);
+      border: 1px solid rgba(124, 53, 32, 0.2);
+    }
+    .demo-card.contable .demo-badge {
+      background: #e6f4f1;
+      color: #124a42;
+      border: 1px solid rgba(18, 74, 66, 0.2);
+    }
+    .demo-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--color-iron);
+      margin-bottom: 0.75rem;
+    }
+    .demo-text {
+      font-size: 0.95rem;
+      color: #6a6459;
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+    .demo-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.875rem;
+      color: #45423b;
+    }
+    .demo-features li::before {
+      content: "✓ ";
+      color: var(--color-amber);
+      font-weight: bold;
+    }
+    .btn-launch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.95rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      background-color: var(--color-iron);
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .demo-card.juridico .btn-launch:hover {
+      background-color: var(--color-brick);
+    }
+    .demo-card.contable .btn-launch:hover {
+      background-color: #124a42;
+    }
+    .hub-footer {
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+      color: #8c8577;
+    }
+    .hub-footer a {
+      color: var(--color-brick);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="hub-container">
+    <span class="hub-tag">Plataforma Modular Reutilizable</span>
+    <h1 class="hub-title">Estudio Ledesma &amp; Asociados</h1>
+    <p class="hub-desc">
+      Landing pages one-page de alta conversión diseñadas con identidad arquitectónica sobria, copy rioplatense profesional y personalización en 1 minuto vía variables CSS y comentarios marcados.
+    </p>
+
+    <div class="hub-grid">
+      
+      <!-- Demo Jurídico -->
+      <article class="demo-card juridico">
+        <div>
+          <span class="demo-badge">Rama Legal / Jurídica</span>
+          <h2 class="demo-title">Estudio Jurídico</h2>
+          <p class="demo-text">Orientado a defensa laboral, sucesiones, daños y reclamos previsionales. Estética de ladrillo visto, hierro negro y luz cálida.</p>
+          <ul class="demo-features">
+            <li>Selector dinámico de motivos legales (Quick Chips)</li>
+            <li>Bento Grid de áreas de práctica</li>
+            <li>Generador WhatsApp estructurado sin backend</li>
+            <li>Schema.org LegalService + SEO completo</li>
+          </ul>
+        </div>
+        <a href="juridico/" class="btn-launch">
+          <span>Ver Demo Jurídica</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </article>
+
+      <!-- Demo Contable -->
+      <article class="demo-card contable">
+        <div>
+          <span class="demo-badge">Rama Contable / Tributaria</span>
+          <h2 class="demo-title">Estudio Contable</h2>
+          <p class="demo-text">Diseñado para pymes, sociedades y profesionales. Liquidación de impuestos ARCA, nóminas y balances con imagen corporativa moderna.</p>
+          <ul class="demo-features">
+            <li>Selector dinámico de abonos y trámites societarios</li>
+            <li>Bento Grid de servicios fiscales</li>
+            <li>Formulario directo a WhatsApp para atención pyme</li>
+            <li>Schema.org AccountingService + SEO completo</li>
+          </ul>
+        </div>
+        <a href="contable/" class="btn-launch">
+          <span>Ver Demo Contable</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </article>
+
+    </div>
+
+    <footer class="hub-footer">
+      <p>Stack: HTML5 &bull; CSS3 Vanilla &bull; JavaScript Vanilla &bull; Cero dependencias npm &bull; WebP optimizado</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ==========================================================================
+       METADATOS SEO Y SOCIALES
+       <!-- EDITAR: Título y descripción para motores de búsqueda -->
+  ========================================================================== -->
+  <title>Estudio Ledesma & Asociados | Asesoría Contable &bull; Tributaria de Autor</title>
+  <meta name="description" content="Estudio contable boutique en Buenos Aires. Asesoramiento impositivo estratégico para pymes, liquidación de sueldos, ARCA, balances y constitución de sociedades.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://estudioledesma.com.ar/contable/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Estudio Ledesma & Asociados | Estudio Contable Boutique">
+  <meta property="og:description" content="Claridad financiera y orden tributario para empresas y profesionales. Trato directo con contadores matriculados en CPCECABA.">
+  <meta property="og:url" content="https://estudioledesma.com.ar/contable/">
+  <meta property="og:image" content="assets/estudio-real.webp">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Serif con carácter + Sans geométrica limpia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS Vanilla -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD (AccountingService) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Estudio Ledesma & Asociados",
+    "description": "Estudio contable y tributario boutique en Buenos Aires. Liquidación de impuestos ARCA, nóminas y balances para empresas.",
+    "url": "https://estudioledesma.com.ar/contable/",
+    "telephone": "+541155550192",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Corrientes 1450, Piso 6",
+      "addressLocality": "Ciudad Autónoma de Buenos Aires",
+      "addressRegion": "CABA",
+      "postalCode": "C1042AAZ",
+      "addressCountry": "AR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER FIJO CON IDENTIDAD BOUTIQUE
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Wordmark con Isotipo Financiero / Contable -->
+      <a href="#hero" class="brand-group" aria-label="Estudio Ledesma y Asociados - Inicio">
+        <div class="brand-icon" aria-hidden="true">
+          <!-- Isotipo Geométrico -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <!-- EDITAR: Nombre de la firma -->
+          <span class="brand-title">LEDESMA &amp; ASOCIADOS</span>
+          <span class="brand-meta">ESTUDIO CONTABLE BOUTIQUE</span>
+        </div>
+      </a>
+
+      <!-- Navegación por anclas -->
+      <nav class="nav-menu" id="primary-nav" aria-label="Navegación principal">
+        <a href="#areas" class="nav-link">Servicios</a>
+        <a href="#metodo" class="nav-link">Método</a>
+        <a href="#valores" class="nav-link">Diferenciales</a>
+        <a href="#equipo" class="nav-link">Equipo</a>
+        <a href="#opiniones" class="nav-link">Reseñas</a>
+        <a href="#faq" class="nav-link">Preguntas</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Botón directo WhatsApp + Menú mobile -->
+      <div class="header-actions">
+        <!-- EDITAR: Enlace directo con número de WhatsApp del cliente -->
+        <a href="https://wa.me/5491155550192?text=Hola%2C%20deseo%20coordinar%20una%20consulta%20contable%20con%20el%20estudio." 
+           class="btn btn-amber btn-sm btn-header-cta" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Contactar al estudio por WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.031 2C6.496 2 2 6.494 2 12.029c0 1.77.464 3.495 1.344 5.018L2 22l5.127-1.344A10.02 10.02 0 0 0 12.031 22C17.566 22 22 17.506 22 12.029 22 6.494 17.566 2 12.031 2zm5.836 14.156c-.242.684-1.205 1.258-1.748 1.332-.497.069-1.12.1-3.284-.799-2.766-1.15-4.544-3.957-4.682-4.14-.138-.184-1.12-1.493-1.12-2.848 0-1.355.706-2.022.956-2.298.25-.276.545-.345.727-.345.182 0 .364.002.523.01.17.009.397-.065.621.474.232.558.79 1.93.859 2.07.069.139.115.3.023.484-.092.184-.138.299-.276.46-.138.161-.29.359-.414.483-.138.138-.282.288-.121.564.161.276.716 1.18 1.536 1.91 1.056.94 1.947 1.232 2.223 1.37.276.138.438.115.6-.069.162-.184.69-805.874-1.08.184-.276.368-.23.621-.138.253.092 1.609.759 1.885.897.276.138.46.207.528.322.069.115.069.667-.173 1.351z"/>
+          </svg>
+          <span>Consultar por WhatsApp</span>
+        </a>
+
+        <!-- Botón Menú Mobile -->
+        <button class="burger-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú de navegación">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION - ATMÓSFERA BOUTIQUE
+         ========================================================================== -->
+    <section class="hero-boutique" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-text-block fade-up-element">
+            <div class="hero-pretitle">
+              <span class="hero-pretitle-bullet" aria-hidden="true"></span>
+              <!-- EDITAR: Subtítulo de servicio -->
+              <span>Asesoría Impositiva &bull; Gestión Contable para Empresas</span>
+            </div>
+
+            <h1 class="hero-h1">
+              Orden contable y certeza fiscal para <span class="accent-brick">impulsar su negocio</span> con <span class="accent-underline">tranquilidad</span>.
+            </h1>
+
+            <p class="hero-lead">
+              Acompañamos a pymes y directores con un esquema tributario riguroso, puntualidad estricta ante ARCA y atención directa de contadores matriculados, sin demoras burocráticas.
+            </p>
+
+            <!-- VUELTA DE TUERCA: QUICK CHIPS PARA PERSONALIZAR LA CONSULTA CONTABLE -->
+            <div class="hero-quick-chips">
+              <span class="quick-chips-label">&#x2714; Seleccione el área contable para su consulta:</span>
+              <div class="chips-container">
+                <button type="button" class="chip-btn chip-amber" data-subject="Abono mensual contable para Pyme" data-prompt="Hola, quiero consultar por un abono mensual integral para mi pyme/empresa.">
+                  🏢 Abono Pyme
+                </button>
+                <button type="button" class="chip-btn" data-subject="Impuestos ARCA / IVA / Ganancias" data-prompt="Hola, necesito asesoramiento para ordenar vencimientos y declaraciones de ARCA / Ingresos Brutos.">
+                  📊 Impuestos ARCA
+                </button>
+                <button type="button" class="chip-btn" data-subject="Liquidación de Sueldos (F.931)" data-prompt="Hola, requiero cotización para liquidación de sueldos y Libro de Sueldos Digital.">
+                  👥 Liquidación de Sueldos
+                </button>
+                <button type="button" class="chip-btn" data-subject="Constitución de Sociedad (SRL / SAS)" data-prompt="Hola, deseo constituir una sociedad (SRL/SAS) ante IGJ y consultar plazos y aranceles.">
+                  ⚖️ Crear Sociedad
+                </button>
+                <button type="button" class="chip-btn" data-subject="Balance Anual y Auditoría" data-prompt="Hola, necesito certificar un balance anual ante el Consejo Profesional.">
+                  📑 Balance &amp; Auditoría
+                </button>
+              </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="hero-actions">
+              <!-- EDITAR: WhatsApp -->
+              <a href="https://wa.me/5491155550192?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20contable%20con%20el%20estudio." 
+                 class="btn btn-whatsapp" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 aria-label="Abrir conversación en WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.031 2C6.496 2 2 6.494 2 12.029c0 1.77.464 3.495 1.344 5.018L2 22l5.127-1.344A10.02 10.02 0 0 0 12.031 22C17.566 22 22 17.506 22 12.029 22 6.494 17.566 2 12.031 2zm5.836 14.156c-.242.684-1.205 1.258-1.748 1.332-.497.069-1.12.1-3.284-.799-2.766-1.15-4.544-3.957-4.682-4.14-.138-.184-1.12-1.493-1.12-2.848 0-1.355.706-2.022.956-2.298.25-.276.545-.345.727-.345.182 0 .364.002.523.01.17.009.397-.065.621.474.232.558.79 1.93.859 2.07.069.139.115.3.023.484-.092.184-.138.299-.276.46-.138.161-.29.359-.414.483-.138.138-.282.288-.121.564.161.276.716 1.18 1.536 1.91 1.056.94 1.947 1.232 2.223 1.37.276.138.438.115.6-.069.162-.184.69-805.874-1.08.184-.276.368-.23.621-.138.253.092 1.609.759 1.885.897.276.138.46.207.528.322.069.115.069.667-.173 1.351z"/>
+                </svg>
+                <span>Conversar por WhatsApp</span>
+              </a>
+
+              <!-- EDITAR: Teléfono directo -->
+              <a href="tel:+541155550192" class="btn btn-outline" aria-label="Llamar al estudio contable">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>(011) 5555-0192</span>
+              </a>
+            </div>
+
+            <!-- Línea de Confianza -->
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Diagnóstico preliminar sin cargo</span>
+              </div>
+              <div class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Matriculados CPCECABA</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Visual Hero: Imagen Real del Estudio con Marco de Hierro -->
+          <div class="hero-visual fade-up-element">
+            <div class="hero-frame">
+              <div class="hero-frame-badge">
+                <span class="badge-amber-dot"></span>
+                <span>Sede CABA &bull; Plataforma Digital en la Nube</span>
+              </div>
+              <img src="assets/estudio-real.webp" 
+                   alt="Interior de las oficinas boutique de Estudio Ledesma y Asociados" 
+                   width="1024" 
+                   height="676" 
+                   fetchpriority="high">
+            </div>
+
+            <!-- Tarjeta Flotante Esquinera -->
+            <div class="hero-corner-card">
+              <div class="corner-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="corner-title">Cero Contingencias</div>
+                <div class="corner-sub">Monitoreo activo del Domicilio Fiscal Electrónico de ARCA.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SERVICIOS: BENTO GRID EDITORIAL
+         ========================================================================== -->
+    <section class="section section-alt" id="areas">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Servicios Integrales</span>
+          <h2 class="section-title">Estructura impositiva y contable para su negocio</h2>
+          <p class="section-desc">Cubrimos todo el ciclo normativo y de liquidación mensual para dotar a su empresa de estabilidad y previsibilidad.</p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Tarjeta Destacada 1: Abono Mensual Pymes (8 columnas) -->
+          <article class="bento-card bento-col-8 bento-card-featured fade-up-element">
+            <div class="bento-top">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+              <span class="bento-tag">ABONO INTEGRAL</span>
+            </div>
+            <h3 class="bento-title">Abono Mensual Contable e Impositivo para Pymes</h3>
+            <p class="bento-desc">
+              Un servicio integral con honorario mensual fijo y transparente. Incluye la liquidación de todas las obligaciones tributarias (IVA, Ganancias, Ingresos Brutos en AGIP/ARBA y Convenio Multilateral SIFERE), revisión de facturación electrónica y seguimiento preventivo de notificaciones oficiales.
+            </p>
+            <div class="bento-footer">
+              <a href="#contacto" class="bento-link">
+                <span>Solicitar diagnóstico para mi empresa</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Liquidación de Sueldos (4 columnas) -->
+          <article class="bento-card bento-col-4 fade-up-element">
+            <div class="bento-top">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <line x1="6" y1="8" x2="10" y2="8"/>
+                  <line x1="6" y1="12" x2="18" y2="12"/>
+                </svg>
+              </div>
+              <span class="bento-tag">NÓMINAS</span>
+            </div>
+            <h3 class="bento-title">Liquidación de Sueldos y Cargas</h3>
+            <p class="bento-desc">Cálculo de haberes según convenios colectivos CCT, Libro de Sueldos Digital, Formulario 931 y certificados de trabajo.</p>
+            <div class="bento-footer">
+              <a href="#contacto" class="bento-link">
+                <span>Cotizar por nómina</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3: Monotributo y Autónomos (4 columnas) -->
+          <article class="bento-card bento-col-4 fade-up-element">
+            <div class="bento-top">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="bento-tag">AUTÓNOMOS</span>
+            </div>
+            <h3 class="bento-title">Monotributo y Profesionales</h3>
+            <p class="bento-desc">Inscripciones, recategorizaciones semestrales de control de ingresos, facturación y transición ordenada al Régimen General.</p>
+            <div class="bento-footer">
+              <a href="#contacto" class="bento-link">
+                <span>Controlar categoría</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4: Constitución de Sociedades (4 columnas) -->
+          <article class="bento-card bento-col-4 fade-up-element">
+            <div class="bento-top">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                </svg>
+              </div>
+              <span class="bento-tag">SOCIETARIO</span>
+            </div>
+            <h3 class="bento-title">Constitución de Sociedades</h3>
+            <p class="bento-desc">Constitución exprés de SAS, SRL y SA ante IGJ y DPPJ, redacción de estatutos sociales y rúbrica obligatoria de libros.</p>
+            <div class="bento-footer">
+              <a href="#contacto" class="bento-link">
+                <span>Crear mi sociedad</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tarjeta 5: Balances y Auditoría (4 columnas) -->
+          <article class="bento-card bento-col-4 fade-up-element">
+            <div class="bento-top">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+              </div>
+              <span class="bento-tag">CERTIFICACIONES</span>
+            </div>
+            <h3 class="bento-title">Balances y Auditoría Contable</h3>
+            <p class="bento-desc">Estados contables anuales, dictámenes de auditor independiente y certificaciones de ingresos legalizadas por CPCECABA.</p>
+            <div class="bento-footer">
+              <a href="#contacto" class="bento-link">
+                <span>Certificar balance</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tarjeta 6: Planificación Fiscal (12 columnas banner) -->
+          <article class="bento-card bento-col-8 fade-up-element" style="grid-column: span 12;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <span class="bento-tag" style="margin-bottom: 0.5rem; display: inline-block;">ESTRATÉGICO</span>
+                <h3 class="bento-title" style="margin-bottom: 0.25rem;">Planificación Fiscal Legal y Ahorro Tributario</h3>
+                <p class="bento-desc" style="max-width: 750px;">Estructuramos esquemas financieros y comerciales para optimizar la carga fiscal legítima de su empresa, evitando retenciones duplicadas en provincias.</p>
+              </div>
+              <a href="#contacto" class="btn btn-amber btn-sm">
+                <span>Coordinar Reunión de Estrategia</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. MÉTODO: TIMELINE ARQUITECTÓNICA
+         ========================================================================== -->
+    <section class="section" id="metodo">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag tag-amber">Metodología de Trabajo</span>
+          <h2 class="section-title">Cómo ordenamos las cuentas de su negocio</h2>
+          <p class="section-desc">Un flujo previsible, 100% digital y sin imprevistos tributarios.</p>
+        </div>
+
+        <div class="timeline-track">
+          
+          <div class="timeline-step fade-up-element">
+            <div class="timeline-header">
+              <span class="step-num">01</span>
+              <span class="step-pill">DIAGNÓSTICO</span>
+            </div>
+            <h3>Relevamiento Fiscal</h3>
+            <p>Auditoría rápida del estado de cuentas ante ARCA y organismos provinciales, detectando saldos a favor o intimaciones pendientes.</p>
+          </div>
+
+          <div class="timeline-step fade-up-element">
+            <div class="timeline-header">
+              <span class="step-num">02</span>
+              <span class="step-pill">ESTRUCTURA</span>
+            </div>
+            <h3>Diseño a Medida</h3>
+            <p>Configuramos el cronograma operativo y definimos el abono fijo mensual adecuado a la envergadura y rubro comercial de su empresa.</p>
+          </div>
+
+          <div class="timeline-step fade-up-element">
+            <div class="timeline-header">
+              <span class="step-num">03</span>
+              <span class="step-pill">PUNTUALIDAD</span>
+            </div>
+            <h3>Liquidación en Término</h3>
+            <p>Presentamos declaraciones juradas y enviamos volantes de pago (VEP) con suficiente anticipación para planificar su flujo de caja.</p>
+          </div>
+
+          <div class="timeline-step fade-up-element">
+            <div class="timeline-header">
+              <span class="step-num">04</span>
+              <span class="step-pill">SOPORTE</span>
+            </div>
+            <h3>Acompañamiento Continuo</h3>
+            <p>Monitoreo diario de notificaciones de ARCA y consultas directas con los socios del estudio por WhatsApp y reuniones virtuales.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. DIFERENCIALES BOUTIQUE
+         ========================================================================== -->
+    <section class="section section-dark" id="valores">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Nuestros Pilares</span>
+          <h2 class="section-title">Por qué elegir nuestro estudio contable</h2>
+          <p class="section-desc">Soporte técnico cercano que cuida la rentabilidad y el cumplimiento normativo de su actividad.</p>
+        </div>
+
+        <div class="diff-grid">
+          
+          <div class="diff-box fade-up-element">
+            <div class="diff-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Trato directo con contadores socios</h3>
+            <p>Atención personalizada por contadores matriculados que conocen su operación de primera mano, sin pasamanos de personal inexperto.</p>
+          </div>
+
+          <div class="diff-box fade-up-element">
+            <div class="diff-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <h3>Cero multas por vencimientos olvidados</h3>
+            <p>Calendario impositivo riguroso y monitoreo preventivo constante del Domicilio Fiscal Electrónico de ARCA para blindar su patrimonio.</p>
+          </div>
+
+          <div class="diff-box fade-up-element">
+            <div class="diff-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+              </svg>
+            </div>
+            <h3>Operación 100% ágil y en la nube</h3>
+            <p>Intercambio seguro de comprobantes, extractos bancarios y recibos de sueldo mediante carpetas en la nube y respuestas por WhatsApp.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. EQUIPO PROFESIONAL
+         ========================================================================== -->
+    <section class="section" id="equipo">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Contadores Matriculados</span>
+          <h2 class="section-title">El equipo que respalda su empresa</h2>
+          <p class="section-desc">Contadores públicos egresados de la Universidad de Buenos Aires matriculados en CPCECABA.</p>
+        </div>
+
+        <div class="team-gallery">
+          
+          <!-- EDITAR: Profesional 1 -->
+          <article class="team-card-boutique fade-up-element">
+            <div class="team-portrait-box">
+              <img src="assets/equipo-1.webp" 
+                   alt="Cdor. Martín Ledesma, Contador Socio Fundador" 
+                   width="480" 
+                   height="480" 
+                   loading="lazy">
+              <span class="team-badge-tag">Placeholder demo</span>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Cdor. Martín Ledesma</h3>
+              <div class="team-role">Socio Fundador &bull; Auditoría y Fiscal</div>
+              <div class="team-matr">T° 230 F° 140 CPCECABA</div>
+              <p class="team-bio">Contador Público (UBA). Especialista en auditoría de estados contables, peritajes económicos y planificación tributaria para empresas medianas.</p>
+            </div>
+          </article>
+
+          <!-- EDITAR: Profesional 2 -->
+          <article class="team-card-boutique fade-up-element">
+            <div class="team-portrait-box">
+              <img src="assets/equipo-2.webp" 
+                   alt="Cdra. Valeria Rossi, Contadora Socia" 
+                   width="480" 
+                   height="480" 
+                   loading="lazy">
+              <span class="team-badge-tag">Placeholder demo</span>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Cdra. Valeria Rossi</h3>
+              <div class="team-role">Socia &bull; Impuestos y Sociedades</div>
+              <div class="team-matr">T° 198 F° 75 CPCECABA</div>
+              <p class="team-bio">Especialista en estructuración societaria ante IGJ, liquidación de impuestos indirectos y regímenes de retención y percepción.</p>
+            </div>
+          </article>
+
+          <!-- EDITAR: Profesional 3 -->
+          <article class="team-card-boutique fade-up-element">
+            <div class="team-portrait-box">
+              <img src="assets/equipo-3.webp" 
+                   alt="Cdor. Gonzalo Méndez, Contador Asociado" 
+                   width="480" 
+                   height="480" 
+                   loading="lazy">
+              <span class="team-badge-tag">Placeholder demo</span>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Cdor. Gonzalo Méndez</h3>
+              <div class="team-role">Asociado &bull; Nóminas y Monotributo</div>
+              <div class="team-matr">T° 255 F° 112 CPCECABA</div>
+              <p class="team-bio">A cargo de la liquidación de sueldos para empresas con convenios mercantiles e industriales, Libro de Sueldos Digital y trámites ante ARCA.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. OPINIONES DE CLIENTES
+         ========================================================================== -->
+    <section class="section section-alt" id="opiniones">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Testimonios</span>
+          <h2 class="section-title">Empresas que confían en nuestra gestión</h2>
+          <div class="reviews-disclaimer-badge">
+            <!-- EDITAR: Nota de testimonios -->
+            <span>Ejemplo orientativo — Reemplazar por opiniones reales de clientes o Google Maps</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <article class="review-brick-card fade-up-element">
+            <div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-quote">"Teníamos trabas permanentes con las retenciones de Ingresos Brutos en varias provincias. Estudio Ledesma ordenó el Convenio Multilateral y nos ahorró una suma importantísima de dinero cada mes."</p>
+            </div>
+            <div class="review-profile">
+              <div class="review-avatar-char">FM</div>
+              <div>
+                <div class="review-author-name">Federico M.</div>
+                <div class="review-author-case">Distribuidora Mayorista (CABA)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-brick-card fade-up-element">
+            <div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-quote">"Constituyeron nuestra SRL ante IGJ en tiempo récord y nos guiaron paso a paso con las altas impositivas. Su disponibilidad para responder dudas por WhatsApp es inmejorable."</p>
+            </div>
+            <div class="review-profile">
+              <div class="review-avatar-char">LR</div>
+              <div>
+                <div class="review-author-name">Luciana R.</div>
+                <div class="review-author-case">Agencia Digital (Buenos Aires)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-brick-card fade-up-element">
+            <div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-quote">"Liquidamos sueldos de 22 empleados con ellos. Jamás tuvimos un atraso con el Libro de Sueldos Digital ni con los sindicatos. Gran seriedad y prolijidad técnica."</p>
+            </div>
+            <div class="review-profile">
+              <div class="review-avatar-char">DB</div>
+              <div>
+                <div class="review-author-name">Darío B.</div>
+                <div class="review-author-case">Empresa Metalúrgica (San Martín)</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag tag-amber">Claridad Previa</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-desc">Criterios claros sobre servicios, abonos y transición de contador.</p>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-card-list">
+            
+            <div class="faq-row fade-up-element">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span>¿Cómo funciona el servicio de abono contable mensual?</span>
+                <span class="faq-icon-cross" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-collapse">
+                <div class="faq-content-inner">
+                  Establecemos un honorario mensual fijo y previsible según la estructura de su negocio (cantidad de empleados, volumen de comprobantes y jurisdicciones fiscales). Este abono incluye todas las presentaciones mensuales de impuestos, liquidación de haberes, monitoreo de notificaciones ARCA y consultas recurrentes.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-row fade-up-element">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span>¿Qué ocurre si estoy cerca del límite de facturación del Monotributo?</span>
+                <span class="faq-icon-cross" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-collapse">
+                <div class="faq-content-inner">
+                  Realizamos un seguimiento preventivo mensual de sus ingresos acumulados. Si está por exceder la escala máxima de la categoría K, planificamos la transición voluntaria al Régimen General (IVA y Ganancias) para evitar exclusiones de oficio por parte de ARCA y aprovechar los beneficios fiscales del régimen puente.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-row fade-up-element">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span>¿Qué documentación se necesita para constituir una sociedad (SRL o SAS)?</span>
+                <span class="faq-icon-cross" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-collapse">
+                <div class="faq-content-inner">
+                  Se requiere el DNI y CUIT/CUIL de los socios, acreditación de domicilio legal y fiscal, constancia de capital inicial y definición del objeto social. Nosotros nos encargamos de la redacción del contrato social, dictamen de precalificación, publicación de edictos y gestión completa ante IGJ o DPPJ.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-row fade-up-element">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span>¿Cómo nos enviamos la documentación contable cada mes?</span>
+                <span class="faq-icon-cross" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-collapse">
+                <div class="faq-content-inner">
+                  Trabajamos 100% de manera digital. Al inicio habilitamos una carpeta privada compartida en la nube donde usted sube extractos bancarios y comprobantes, y desde donde descarga sus volantes de pago de impuestos (VEP) y recibos de haberes. Sin necesidad de enviar papeles físicos.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-row fade-up-element">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span>¿Puedo cambiar de contador a mitad de año si ya tengo uno?</span>
+                <span class="faq-icon-cross" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-collapse">
+                <div class="faq-content-inner">
+                  Sí, la transición es completamente habitual y ordenada. Nos comunicamos de colega a colega para solicitar el legajo impositivo, papeles de trabajo y últimos libros contables sin que su operatoria comercial sufra interrupciones ni retrasos ante ARCA.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CONTACTO: FORMULARIO DINÁMICO & SEDE
+         ========================================================================== -->
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Contacto Directo</span>
+          <h2 class="section-title">Comencemos a ordenar las cuentas de su negocio</h2>
+          <p class="section-desc">Escríbanos para coordinar una reunión de diagnóstico contable o envíenos su consulta inmediata por WhatsApp.</p>
+        </div>
+
+        <div class="contact-split">
+          
+          <!-- Tarjeta Formulario -->
+          <div class="contact-card-box fade-up-element">
+            <div class="contact-card-header">
+              <h3>Solicitar asesoramiento contable</h3>
+              <p>Completando estos datos, se abrirá WhatsApp con el mensaje estructurado para que un contador matriculado le responda con celeridad.</p>
+            </div>
+
+            <!-- EDITAR: data-phone con número destino de WhatsApp -->
+            <form id="whatsapp-form" data-phone="5491155550192" novalidate>
+              
+              <div class="form-group-item">
+                <label for="form-name" class="form-label-title">Nombre y Apellido / Razón Social *</label>
+                <input type="text" id="form-name" class="form-ctrl" placeholder="Ej. Carlos Domínguez (Distribuidora CD)" required>
+              </div>
+
+              <div class="form-group-item">
+                <label for="form-phone" class="form-label-title">Teléfono de contacto</label>
+                <input type="tel" id="form-phone" class="form-ctrl" placeholder="Ej. 11 5555-0000">
+              </div>
+
+              <div class="form-group-item">
+                <label for="form-subject" class="form-label-title">Servicio requerido *</label>
+                <select id="form-subject" class="form-ctrl">
+                  <option value="Abono mensual contable para Pyme">Abono mensual contable para Pyme</option>
+                  <option value="Monotributo y Autónomos">Monotributo y Autónomos</option>
+                  <option value="Impuestos ARCA / IVA / Ganancias">Impuestos ARCA / IVA / Ganancias</option>
+                  <option value="Liquidación de Sueldos (F.931)">Liquidación de Sueldos (F.931)</option>
+                  <option value="Constitución de Sociedad (SRL / SAS)">Constitución de Sociedad (SRL / SAS)</option>
+                  <option value="Balance Anual y Auditoría">Balance Anual y Auditoría</option>
+                  <option value="Otra consulta tributaria">Otra consulta tributaria</option>
+                </select>
+              </div>
+
+              <div class="form-group-item">
+                <label for="form-message" class="form-label-title">Detalle de su actividad o inquietud</label>
+                <textarea id="form-message" class="form-ctrl form-ctrl-textarea" placeholder="Coméntenos brevemente qué rubro tiene o qué gestión necesita resolver..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.031 2C6.496 2 2 6.494 2 12.029c0 1.77.464 3.495 1.344 5.018L2 22l5.127-1.344A10.02 10.02 0 0 0 12.031 22C17.566 22 22 17.506 22 12.029 22 6.494 17.566 2 12.031 2zm5.836 14.156c-.242.684-1.205 1.258-1.748 1.332-.497.069-1.12.1-3.284-.799-2.766-1.15-4.544-3.957-4.682-4.14-.138-.184-1.12-1.493-1.12-2.848 0-1.355.706-2.022.956-2.298.25-.276.545-.345.727-.345.182 0 .364.002.523.01.17.009.397-.065.621.474.232.558.79 1.93.859 2.07.069.139.115.3.023.484-.092.184-.138.299-.276.46-.138.161-.29.359-.414.483-.138.138-.282.288-.121.564.161.276.716 1.18 1.536 1.91 1.056.94 1.947 1.232 2.223 1.37.276.138.438.115.6-.069.162-.184.69-805.874-1.08.184-.276.368-.23.621-.138.253.092 1.609.759 1.885.897.276.138.46.207.528.322.069.115.069.667-.173 1.351z"/>
+                </svg>
+                <span>Enviar consulta por WhatsApp</span>
+              </button>
+
+              <div class="form-security-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span>Respuesta directa de contadores matriculados &bull; Datos protegidos.</span>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Columna Lateral Información del Estudio -->
+          <div class="studio-side-info fade-up-element">
+            
+            <!-- EDITAR: Dirección física -->
+            <div class="studio-info-row">
+              <div class="studio-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="studio-info-text">
+                <h4>Sede del Estudio</h4>
+                <p>Av. Corrientes 1450, Piso 6, Oficina 602<br>Ciudad Autónoma de Buenos Aires (CABA)</p>
+              </div>
+            </div>
+
+            <!-- EDITAR: Teléfono y WhatsApp -->
+            <div class="studio-info-row">
+              <div class="studio-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="studio-info-text">
+                <h4>Teléfonos de Contacto</h4>
+                <p>Estudio fijo: <a href="tel:+541155550192">(011) 5555-0192</a><br>
+                   WhatsApp directo: <a href="https://wa.me/5491155550192" target="_blank" rel="noopener noreferrer">+54 9 11 5555-0192</a></p>
+              </div>
+            </div>
+
+            <!-- EDITAR: Email -->
+            <div class="studio-info-row">
+              <div class="studio-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="studio-info-text">
+                <h4>Correo Electrónico</h4>
+                <p><a href="mailto:contable@estudioledesma.com.ar">contable@estudioledesma.com.ar</a></p>
+              </div>
+            </div>
+
+            <!-- EDITAR: Horarios -->
+            <div class="studio-info-row">
+              <div class="studio-info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="studio-info-text">
+                <h4>Horarios de Atención</h4>
+                <p>Lunes a Viernes de 9:00 a 18:00 hs<br>(Reuniones de asesoramiento con turno previo)</p>
+              </div>
+            </div>
+
+            <!-- Mapa Embebido Responsivo -->
+            <div class="studio-map-frame">
+              <iframe 
+                title="Ubicación de Estudio Ledesma & Asociados"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016824982626!2d-58.38870192348332!3d-34.60373887295484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf1d1b9979%3A0xc39f75ec56bf4749!2sAv.%20Corrientes%201450%2C%20C1042AAZ%20CABA!5e0!3m2!1ses-419!2sar!4v1710000000000!5m2!1ses-419!2sar" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       10. FOOTER BOUTIQUE CON AVISO LEGAL
+       ========================================================================== -->
+  <footer class="site-footer-boutique">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        
+        <div>
+          <div class="brand-group">
+            <div class="brand-icon" style="background-color: #232328; border-color: #383840;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: #ffffff;">LEDESMA &amp; ASOCIADOS</span>
+              <span class="brand-meta" style="color: var(--color-amber);">ESTUDIO CONTABLE BOUTIQUE</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Servicios contables, tributarios y de auditoría orientados a dotar de previsibilidad financiera y seguridad normativa a pymes, sociedades y profesionales.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navegación</h4>
+          <div class="footer-links-list">
+            <a href="#areas">Servicios</a>
+            <a href="#metodo">Metodología</a>
+            <a href="#valores">Diferenciales</a>
+            <a href="#equipo">Equipo Contable</a>
+            <a href="#opiniones">Reseñas</a>
+            <a href="#faq">Preguntas</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Sede &bull; Buenos Aires</h4>
+          <!-- EDITAR: Datos rápidos en footer -->
+          <div class="footer-item-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Av. Corrientes 1450, Piso 6, CABA</span>
+          </div>
+
+          <div class="footer-item-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>(011) 5555-0192</span>
+          </div>
+
+          <div class="footer-item-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>contable@estudioledesma.com.ar</span>
+          </div>
+
+          <div class="footer-item-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Lunes a Viernes de 9:00 a 18:00 hs</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-baseline">
+        <p class="footer-legal-clause">
+          Aviso legal: La información provista en este sitio web tiene carácter divulgativo e ilustrativo y no sustituye el dictamen profesional formal ni genera responsabilidad profesional sin propuesta de trabajo suscrita.
+        </p>
+        <div class="footer-credits-row">
+          <span>&copy; <span id="current-year">2026</span> Estudio Ledesma &amp; Asociados. Todos los derechos reservados.</span>
+          <span>Buenos Aires, República Argentina</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       EXTRAS: BOTÓN FLOTANTE WHATSAPP CON BURBUJA AMISTOSA
+       ========================================================================== -->
+  <!-- EDITAR: Enlace flotante de WhatsApp -->
+  <a href="https://wa.me/5491155550192?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20contable%20con%20el%20estudio." 
+     class="floating-wa-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Escribir por WhatsApp al estudio">
+    <span class="floating-wa-bubble">¿Tiene una duda contable? Escríbanos</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.031 2C6.496 2 2 6.494 2 12.029c0 1.77.464 3.495 1.344 5.018L2 22l5.127-1.344A10.02 10.02 0 0 0 12.031 22C17.566 22 22 17.506 22 12.029 22 6.494 17.566 2 12.031 2zm5.836 14.156c-.242.684-1.205 1.258-1.748 1.332-.497.069-1.12.1-3.284-.799-2.766-1.15-4.544-3.957-4.682-4.14-.138-.184-1.12-1.493-1.12-2.848 0-1.355.706-2.022.956-2.298.25-.276.545-.345.727-.345.182 0 .364.002.523.01.17.009.397-.065.621.474.232.558.79 1.93.859 2.07.069.139.115.3.023.484-.092.184-.138.299-.276.46-.138.161-.29.359-.414.483-.138.138-.282.288-.121.564.161.276.716 1.18 1.536 1.91 1.056.94 1.947 1.232 2.223 1.37.276.138.438.115.6-.069.162-.184.69-805.874-1.08.184-.276.368-.23.621-.138.253.092 1.609.759 1.885.897.276.138.46.207.528.322.069.115.069.667-.173 1.351z"/>
+    </svg>
+  </a>
+
+  <!-- Script JS Vanilla -->
+  <script src="script.js"></script>
+</body>
+</html>
