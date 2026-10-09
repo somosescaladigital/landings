@@ -8,14 +8,48 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => nav?.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
 
   /* 2. MENÚ MOBILE */
-  const hamburger  = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileClose= document.getElementById('mobile-close');
-  const openMenu  = () => { mobileMenu?.classList.add('open');    hamburger?.classList.add('active');    hamburger?.setAttribute('aria-expanded','true');  document.body.style.overflow='hidden'; };
-  const closeMenu = () => { mobileMenu?.classList.remove('open'); hamburger?.classList.remove('active'); hamburger?.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
-  hamburger?.addEventListener('click', openMenu);
+  const hamburger      = document.getElementById('hamburger');
+  const mobileMenu     = document.getElementById('mobile-menu');
+  const mobileClose    = document.getElementById('mobile-close');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+
+  const openMenu = () => {
+    mobileMenu?.classList.add('open');
+    mobileMenu?.setAttribute('aria-hidden', 'false');
+    hamburger?.classList.add('active');
+    hamburger?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    mobileMenu?.classList.remove('open');
+    mobileMenu?.setAttribute('aria-hidden', 'true');
+    hamburger?.classList.remove('active');
+    hamburger?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  const toggleMenu = () => {
+    if (mobileMenu?.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
+
+  hamburger?.addEventListener('click', toggleMenu);
   mobileClose?.addEventListener('click', closeMenu);
-  mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  mobileBackdrop?.addEventListener('click', closeMenu);
+
+  mobileMenu?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu?.classList.contains('open')) {
+      closeMenu();
+    }
+  });
 
   /* 3. SCROLL REVEAL */
   const revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right');

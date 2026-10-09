@@ -77,13 +77,49 @@
       </div>
     </nav>
 
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú">
-      <button class="nav__mobile-close" id="mobile-close" aria-label="Cerrar menú">✕</button>
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#zona">Zona</a>
-      <a href="#contacto">Contacto</a>
-      <a href="https://wa.me/5491154983091?text=Hola+Lucas%2C+quisiera+pedir+un+presupuesto" class="btn btn--lime" target="_blank" rel="noopener">Pedir Presupuesto</a>
+    <!-- Menú Mobile -->
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" aria-hidden="true">
+      <div class="nav__mobile-backdrop" id="mobile-backdrop"></div>
+      <div class="nav__mobile-panel">
+        <div class="nav__mobile-header">
+          <div class="nav__mobile-brand">
+            <span class="nav__mobile-brand-name">Lucas Acosta</span>
+            <span class="nav__mobile-brand-sub">Paisajismo · Victoria</span>
+          </div>
+          <button class="nav__mobile-close" id="mobile-close" aria-label="Cerrar menú">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <nav class="nav__mobile-links" aria-label="Enlaces mobile">
+          <a href="#servicios" class="nav__mobile-link">
+            <span class="nav__mobile-num">01</span>
+            <span class="nav__mobile-text">Servicios</span>
+          </a>
+          <a href="#nosotros" class="nav__mobile-link">
+            <span class="nav__mobile-num">02</span>
+            <span class="nav__mobile-text">Nosotros</span>
+          </a>
+          <a href="#zona" class="nav__mobile-link">
+            <span class="nav__mobile-num">03</span>
+            <span class="nav__mobile-text">Zona de cobertura</span>
+          </a>
+          <a href="#contacto" class="nav__mobile-link">
+            <span class="nav__mobile-num">04</span>
+            <span class="nav__mobile-text">Contacto y presupuesto</span>
+          </a>
+        </nav>
+
+        <div class="nav__mobile-footer">
+          <a href="https://wa.me/5491154983091?text=Hola+Lucas%2C+quisiera+pedir+un+presupuesto" class="btn btn--lime nav__mobile-cta" target="_blank" rel="noopener">
+            Pedir Presupuesto por WhatsApp
+          </a>
+          <div class="nav__mobile-extra">
+            <span>Victoria, BA · 5.0 ★ en Instagram</span>
+            <a href="https://www.instagram.com/lucasacostadesign/" target="_blank" rel="noopener">@lucasacostadesign</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
