@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerrajería Mario | Morón, Buenos Aires · Tel: 011 5416-5211</title>
+    <meta name="description"
+        content="Cerrajería Mario en Morón, Provincia de Buenos Aires. Apertura de puertas, copias de llaves, llaves maestras y seguridad para hogares y comercios. Llamá al 011 5416-5211.">
+    <meta name="keywords"
+        content="cerrajería, Morón, apertura de puertas, copia de llaves, llave maestra, cerrajero, Buenos Aires">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="mascot.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="mascot.png" alt="Mario Mascot" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand">Cerrajería <span class="highlight">Mario</span></span>
+                    <span class="brand-sub">Morón · Buenos Aires</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#testimonios">Reseñas</a></li>
+                <li><a href="tel:01154165211" class="nav-btn-call"><i class="fas fa-phone-alt"></i> 011 5416-5211</a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-keys">
+                <span class="bg-key bk1"><i class="fas fa-key"></i></span>
+                <span class="bg-key bk2"><i class="fas fa-key"></i></span>
+                <span class="bg-key bk3"><i class="fas fa-key"></i></span>
+                <span class="bg-key bk4"><i class="fas fa-lock"></i></span>
+                <span class="bg-key bk5"><i class="fas fa-key"></i></span>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span>⭐ 4.9 · 84 Reseñas en Google</span>
+                    </div>
+                    <h1>Tu Cerrajero<br>de <span class="text-accent">Confianza</span><br>en Morón</h1>
+                    <p>Atención rápida, honesta y profesional.<br>Copias de llaves, apertura de puertas, llaves maestras
+                        y mucho más.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5491154165211" target="_blank" class="btn btn-whatsapp"
+                            id="hero-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Ahora
+                        </a>
+                        <a href="tel:01154165211" class="btn btn-outline" id="hero-call">
+                            <i class="fas fa-phone"></i> LLAMAR
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span>100% Recomendado</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt trust-icon"></i>
+                            <span>Trabajo Garantizado</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-item">
+                            <i class="fas fa-bolt trust-icon"></i>
+                            <span>Respuesta Rápida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="mascot-glow"></div>
+                    <div class="mascot-frame">
+                        <img src="mascot.png" alt="Mario el Cerrajero" class="mascot-img" id="mascot-hero">
+                        <div class="floating-label fl-1">
+                            <i class="fas fa-thumbs-up"></i> Amable
+                        </div>
+                        <div class="floating-label fl-2">
+                            <i class="fas fa-check-circle"></i> Confiable
+                        </div>
+                        <div class="floating-label fl-3">
+                            <i class="fas fa-bolt"></i> Rápido
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Urgency Banner -->
+        <div class="urgency-banner">
+            <div class="container banner-inner">
+                <div class="banner-text">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>¿Te quedaste sin llave o con la puerta trabada? ¡Mario te soluciona al instante!</span>
+                </div>
+                <a href="tel:01154165211" class="banner-btn" id="banner-call">LLAMAR AHORA <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="container stats-inner">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="84">0</span>
+                    <span class="stat-label">Reseñas Google</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Puntuación</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Confianza</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-label">Clientes Felices</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section id="servicios" class="section services">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="tag">Lo que hacemos</span>
+                    <h2>Servicios de Cerrajería</h2>
+                    <p>Soluciones integrales para tu hogar, comercio y vehículo</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal" id="svc-apertura">
+                        <div class="s-icon"><i class="fas fa-door-open"></i></div>
+                        <h3>Apertura de Puertas</h3>
+                        <p>¿Te quedaste afuera? Abrimos tu puerta sin dañar la cerradura. Rápido y sin vueltas.</p>
+                        <div class="s-tag">Urgencias</div>
+                    </div>
+                    <div class="service-card reveal" id="svc-copias">
+                        <div class="s-icon"><i class="fas fa-key"></i></div>
+                        <h3>Copias de Llaves</h3>
+                        <p>Duplicados de alta precisión para cualquier tipo de llave. Trabajamos en el momento.</p>
+                        <div class="s-tag">Más pedido</div>
+                    </div>
+                    <div class="service-card reveal" id="svc-maestra">
+                        <div class="s-icon s-icon-rotate"><i class="fas fa-key"></i></div>
+                        <h3>Llaves Maestras</h3>
+                        <p>Sistemas de llave maestra para edificios, comercios y propiedades. Seguridad total.</p>
+                        <div class="s-tag">Edificios</div>
+                    </div>
+                    <div class="service-card reveal" id="svc-cerraduras">
+                        <div class="s-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Cambio de Cerraduras</h3>
+                        <p>Instalación y reemplazo de cerraduras de alta seguridad. Te asesoramos sin costo extra.</p>
+                        <div class="s-tag">Seguridad</div>
+                    </div>
+                    <div class="service-card reveal" id="svc-auto">
+                        <div class="s-icon"><i class="fas fa-car"></i></div>
+                        <h3>Cerrajería Automotriz</h3>
+                        <p>Apertura de vehículos y soluciones para llaves de auto. Sin daños garantizados.</p>
+                        <div class="s-tag">Autos</div>
+                    </div>
+                    <div class="service-card reveal" id="svc-seguridad">
+                        <div class="s-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Asesoramiento en Seguridad</h3>
+                        <p>Te guiamos para que tu puerta quede bien asegurada sin pagar de más. Honestidad ante todo.
+                        </p>
+                        <div class="s-tag">Gratis</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Expert -->
+        <section id="nosotros" class="section expert-area">
+            <div class="container grid-2">
+                <div class="expert-visual reveal">
+                    <div class="mascot-about-frame">
+                        <img src="mascot.png" alt="Mario Cerrajero" class="mascot-about-img">
+                        <div class="about-badge">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <strong>4.9 / 5</strong>
+                                <span>84 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-content reveal">
+                    <span class="tag">Quiénes somos</span>
+                    <h2>Mario: Amabilidad,<br><span class="text-accent">Honestidad</span> y Oficio.</h2>
+                    <p>En Cerrajería Mario nos tomamos cada trabajo en serio. No hacemos de más ni de menos: te damos la
+                        solución correcta al precio justo. Así lo dicen nuestros clientes.</p>
+                    <ul class="expert-list">
+                        <li><i class="fas fa-check-circle"></i> Súper amable y de buena onda</li>
+                        <li><i class="fas fa-check-circle"></i> Resolutivo y rápido</li>
+                        <li><i class="fas fa-check-circle"></i> 1000% de confianza</li>
+                        <li><i class="fas fa-check-circle"></i> Asesoramiento honesto sin cargos extra</li>
+                    </ul>
+                    <a href="https://wa.me/5491154165211" target="_blank" class="btn btn-whatsapp" id="about-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Consultá sin compromiso
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonios" class="section testimonials">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="tag">Lo que dicen</span>
+                    <h2>Vecinos que confían en Mario</h2>
+                    <p>Reseñas reales de Google Maps ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="testi-grid">
+                    <div class="testi-card reveal" id="review-enrique">
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Super recomendado! Mario es lo más, excelente servicio, muy amable y buena onda. El trabajo
+                            que me hizo quedó de 10 así que recomendadísimo 👍👍"</p>
+                        <div class="testi-user">
+                            <div class="testi-avatar">EC</div>
+                            <div>
+                                <strong>Enrique Calderon</strong>
+                                <span>Local Guide · 35 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal" id="review-yany">
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Todo excelente, Diego resolvió mi problema rapidísimo! Nos guió para que nuestra puerta
+                            quede bien asegurada sin pagar de más! Un genio total y 1000 por ciento de confianza! No
+                            duden en llamarlo"</p>
+                        <div class="testi-user">
+                            <div class="testi-avatar">YC</div>
+                            <div>
+                                <strong>Yany Correa</strong>
+                                <span>Local Guide · 47 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal" id="review-silvana">
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Agradecemos a Mario por su buena predisposición. Nos hizo una llave maestra para abrir a la
+                            noche ya que nos quedamos afuera. ¡Muchas gracias Mario!"</p>
+                        <div class="testi-user">
+                            <div class="testi-avatar">SM</div>
+                            <div>
+                                <strong>Silvana Mongelli</strong>
+                                <span>4 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal" id="review-daniel">
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excelente trabajo, nos resolvió el problema y nos ayudó para que se dé la mejor opción"</p>
+                        <div class="testi-user">
+                            <div class="testi-avatar">DD</div>
+                            <div>
+                                <strong>Daniel Dias</strong>
+                                <span>7 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map -->
+        <section id="contacto" class="section contact">
+            <div class="container contact-box">
+                <div class="contact-info">
+                    <span class="tag">Contacto</span>
+                    <h2>¿Cómo podemos<br>ayudarte?</h2>
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Dirección</strong>
+                                <p>Luis Antonio Beruti 1089<br>B1708EXU Morón, Buenos Aires</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p><a href="tel:01154165211">011 5416-5211</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <strong>Instagram</strong>
+                                <p><a href="https://instagram.com" target="_blank">@cerrajeriamario</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lunes a Sábado · Cierra a las 8 p.m.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/5491154165211" target="_blank" class="btn btn-whatsapp"
+                            id="contact-whatsapp">
+                            <i class="fab fa-whatsapp"></i> ESCRIBIR POR WHATSAPP
+                        </a>
+                        <a href="tel:01154165211" class="btn btn-outline" id="contact-call">
+                            <i class="fas fa-phone"></i> LLAMAR
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.98!2d-58.6170!3d-34.6520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf0c0e6d25b5%3A0xecb3c10de1d60b4e!2sLuis%20Antonio%20Beruti%201089%2C%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="f-brand">
+                <img src="mascot.png" alt="Mario Logo" class="f-logo">
+                <div>
+                    <span class="f-name">Cerrajería <span class="highlight">Mario</span></span>
+                    <span class="f-location">Morón, Buenos Aires</span>
+                </div>
+            </div>
+            <p class="f-copy">&copy; 2026 Cerrajería Mario · Morón, Buenos Aires. Todos los derechos reservados.</p>
+            <div class="f-socials">
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5491154165211" target="_blank" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Action Bar -->
+    <div class="mobile-action-bar">
+        <a href="tel:01154165211" class="m-action m-call" id="mobile-call">
+            <i class="fas fa-phone"></i> LLAMAR
+        </a>
+        <a href="https://wa.me/5491154165211" target="_blank" class="m-action m-ws" id="mobile-whatsapp">
+            <i class="fab fa-whatsapp"></i> WHATSAPP
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
